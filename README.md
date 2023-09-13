@@ -68,7 +68,7 @@ Users of Bun can run `bun --bun <script>`. For example: `bun --bun minify`
 
 
 ## Roadmap
-This repository gets updated as the projects on our [roadmap](//nuejs.org/roadmap) get finished. Ultimately create-nue iw powered by the upcoming **Nuekit** website generator, which is currently being developed in a private GitHub repository. For now this repository is to learn how [Nue JS](//nuejs.org/docs/nuejs) works.
+This repository gets updated as the projects on our [ecosystem](//nuejs.org/ecosystem/) get finished. Ultimately create-nue iw powered by the upcoming **Nuekit** website generator, which is currently being developed in a private GitHub repository. For now this repository is to learn how [Nue JS](//nuejs.org/docs/nuejs/) works.
 
 
 
