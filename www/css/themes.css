@@ -1,0 +1,45 @@
+
+/* Dark theme */
+.dark {
+  background-color: #0d1117;
+}
+
+.dark {
+  color: #7d8590;
+}
+
+.dark header .icon {
+  filter: invert(90%);
+}
+
+.dark h1, .dark h3 {
+  color: white;
+}
+
+.dark li {
+  background-color: #21262d;
+}
+
+/* Dark + Vibrant theme */
+.vibrant {
+  background-color: #0098c8;
+}
+
+.vibrant {
+  color: #fff9;
+}
+
+.vibrant h1 {
+  background-image: linear-gradient(-45deg, #fff, #53ffec);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vibrant li {
+  background-color: #007ba0;
+}
+
+.vibrant li:nth-child(odd) {
+  background-color: #005169;
+}

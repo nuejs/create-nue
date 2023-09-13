@@ -1,0 +1,17 @@
+
+{
+  "name": "create-nue",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "npm run minify && npm run render && npm run compile && npm run serve",
+    "serve": "cd www && ../scripts/server.js",
+    "compile": "./scripts/compile.js",
+    "minify": "./scripts/minify.js",
+    "render": "./scripts/render.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "nuejs": "^0.1.0"
+  }
+}

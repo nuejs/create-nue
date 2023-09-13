@@ -1,0 +1,54 @@
+
+dialog {
+  box-shadow: 0 0 3em #0004;
+  transition: opacity .3s;
+  border-radius: 8px;
+  min-width: 20em;
+  padding: 1.6em;
+  border: 0;
+  top: 20%;
+}
+
+dialog h2 {
+  margin-bottom: 1em;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(3px)
+}
+
+/* Theme selector */
+.theme-options {
+  display: flex;
+  gap: 1.2em;
+}
+
+
+.theme {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  color: white;
+  padding: 1em;
+  height: 8em;
+  width: 7em;
+}
+
+.theme:hover {
+  box-shadow: 0 0 0 3px #00c2ff;
+}
+
+.theme:active {
+  transform: scale(.98);
+}
+
+.theme:first-child {
+  color: #111;
+}
+
+.theme input {
+  accent-color: #00c2ff;
+  transform: scale(1.5);
+  margin-bottom: .5em;
+}

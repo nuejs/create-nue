@@ -1,0 +1,34 @@
+
+<!--
+  Example client-side components
+-->
+
+<a @name="dialog-opener" class="dialog-opener" @click="open">
+  <img loading="lazy" src="img/settings.svg" class="icon">
+  <script>
+    open() {
+      const key = this.root.getAttribute('key')
+      const dialog = window[key]
+      if (dialog) dialog.showModal()
+    }
+  </script>
+</a>
+
+<dialog @name="theme-selector">
+  <h2>Select theme</h2>
+
+  <section class="theme-options">
+    <label :for="el, i in themes" :style="background-color: #{el.color}" class="theme">
+      <input name="theme" type="radio" :checked="!i" @change="change(el, $event)">
+      <h4>{ el.name }</h4>
+    </label>
+  </section>
+
+  <script>
+    change(el, e) {
+      document.body.className = el.class || el.name.toLowerCase()
+      themes.close()
+    }
+  </script>
+
+</dialog>
