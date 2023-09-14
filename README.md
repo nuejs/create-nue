@@ -3,15 +3,15 @@
   <img src="https://nuejs.org/global/logo/logo.png" width="275" alt="Nue logo">
 </a>
 
+[Backstory](//nuejs.org/backstory/) •
 [Ecosystem](//nuejs.org/ecosystem/) •
-[Nue JS docs](//nuejs.org/docs/nuejs/) •
-[Backstory](//nuejs.org/backstory/)
+[Documentation](//nuejs.org/docs/nuejs/)
 
 
 # create-nue
 A recommended way to start a Nue project
 
-This project is the "Hello, world" application for Nue. It currently shows only the power of the Nue JS](//nuejs.org/docs/nuejs/) UI library. Eventually this project demonstrates all the features of the [Nue ecosystem](//nuejs.org/ecosystem/), like rich HTML pages written with Markdown- like syntax and universal hot reloading.
+This project is the "Hello, world" application for Nue. It currently shows only the power of the [Nue JS](//nuejs.org/docs/nuejs/) UI library. Eventually this project demonstrates all the features of the [Nue ecosystem](//nuejs.org/ecosystem/), like rich HTML pages written with Markdown- like syntax and universal hot reloading.
 
 
 ## Installation
