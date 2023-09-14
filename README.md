@@ -15,13 +15,17 @@ This project is the "Hello, world" application for Nue. It currently shows only 
 
 
 ## Installation
-Setup a new Nue project with `npm create nue <destination>`. For example:
+The recommended way to get started is to clone a `create-nue` repository and play with it:
 
 ``` sh
-npm create nue my-nue-app
+# clone the repository
+git clone git@github.com:nuejs/create-nue.git
 
 # cd to your newly created app
-cd my-nue-app
+cd create-nue
+
+# install dependencies
+npm install
 
 # Build demo site and start a HTTP server
 npm run start
@@ -29,6 +33,7 @@ npm run start
 # Open the demo on the browser
 open "http://localhost:8080"
 ```
+
 
 ## Demo website
 In above we created a demo website under `my-nue-app/www` and serve it on port 8080. It looks like this:
