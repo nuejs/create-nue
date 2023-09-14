@@ -11,7 +11,7 @@
     "render": "./scripts/render.js"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
-    "nuejs": "^0.1.0"
+    "nuejs-core": "^0.1.0",
+    "js-yaml": "^4.1.0"
   }
 }
