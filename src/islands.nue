@@ -1,6 +1,8 @@
 
 <!--
-  Example client-side components
+  Small library of client-side reactive components
+
+  https://nuejs.org/docs/nuejs/reactive-components.html
 -->
 
 <a @name="dialog-opener" class="dialog-opener" @click="open">

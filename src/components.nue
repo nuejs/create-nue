@@ -1,6 +1,8 @@
 
 <!--
-  Example server-side components used by page.nue
+  Library of server-side components used by layout.nue
+
+  See: scripts/render.js
 -->
 
 

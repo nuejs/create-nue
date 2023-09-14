@@ -1,5 +1,10 @@
 
-// Progressive enhancement
+/**
+ * Mounts or "hydrates" Nue- components to the page after the content is loaded
+ *
+ * Uses a web-component instance for the progressive enhancement
+ */
+
 import createApp from './nue.js'
 import { lib } from './islands.js'
 

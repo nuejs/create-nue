@@ -1,5 +1,8 @@
 
-# Sample file to isolate content/settings from layout and logic
+# Website content and settings (in YAML format)
+
+# Parsed and given as argument to SSR render() function
+# check: scripts/render.js
 
 title: A barebones Nue app
 heading: Frontend Troublesolver

@@ -2,6 +2,8 @@
 
 /*
   Minifies Nue JS files into a single JS file (nue.js)
+
+  Uses esbuild or Bun's internal minifier depending on the environment
 */
 
 import { promises as fs } from 'node:fs'

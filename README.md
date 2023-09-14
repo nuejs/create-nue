@@ -11,6 +11,8 @@
 # create-nue
 A recommended way to start a Nue project
 
+This project is the "Hello, world" application for Nue. It currently shows only the power of the Nue JS](//nuejs.org/docs/nuejs/) UI library. Eventually this project demonstrates all the features of the [Nue ecosystem](//nuejs.org/ecosystem/), like rich HTML pages written with Markdown- like syntax and universal hot reloading.
+
 
 ## Installation
 Setup a new Nue project with `npm create nue <destination>`. For example:
@@ -47,8 +49,16 @@ In above we created a demo website under `my-nue-app/www` and serve it on port 8
 [fourteen]: https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#tcp_slow_start_14kb_rule
 
 
-## Scripts
-You can run the following scripts with `npm run <script>` or `bun <script>`.
+## Learning Nue JS
+Please check the contents of the `src` and `scripts` folders to see how Nue JS server-side rendering and compilation works. The source code should be easy to read.
+
+You can make changes to the files under the `src` folder and run `npm run render` or `npm run compile` to see it live on the demo.
+
+Users of Bun can run `bun --bun <script>`. For example: `bun --bun minify`
+
+
+## All the scripts
+You can run the following scripts with `npm run <script>` or `bun --bun <script>`.
 
 - **minify**: creates a bundled and minified nue.js script (`www/nue.js`) from the files under `node_modules/nuejs/src`
 
@@ -61,14 +71,9 @@ You can run the following scripts with `npm run <script>` or `bun <script>`.
 - **start**: run them all: minify, render, compile, and serve
 
 
-## Learning Nue JS
-Make changes to the files under the `src` folder and run `npm run render` or `npm run compile` to see your changes. You can also study the contents of the [scripts](scripts) folder. You can see how Nue server side rendering and compilation works. The source code should be easy to read.
-
-Users of Bun can run `bun --bun <script>`. For example: `bun --bun minify`
 
 
-## Roadmap
-This repository gets updated as the projects on our [ecosystem](//nuejs.org/ecosystem/) get finished. Ultimately create-nue iw powered by the upcoming **Nuekit** website generator, which is currently being developed in a private GitHub repository. For now this repository is to learn how [Nue JS](//nuejs.org/docs/nuejs/) works.
+
 
 
 
