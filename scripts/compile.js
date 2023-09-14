@@ -5,7 +5,7 @@
 
   https://nuejs.org/docs/nuejs/reactive-components.html
 */
-import { compileFile } from 'nuejs'
+import { compileFile } from 'nuejs-core'
 
 const target_js = 'www/islands.js'
 

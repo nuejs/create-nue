@@ -2,14 +2,16 @@
 {
   "name": "create-nue",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/nuejs/create-nue",
+  "description": "A recommended way to start a Nue project",
+
   "repository": {
     "url": "https://github.com/nuejs/create-nue.git",
     "type": "git"
   },
   "bin": {
-    "create-nue": "./scripts/render.js"
+    "create-nue": "./scripts/init.js"
   },
 
   "scripts": {

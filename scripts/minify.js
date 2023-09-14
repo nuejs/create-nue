@@ -13,7 +13,7 @@ try {
   let Bundler = process.isBun ? Bun : await import('esbuild')
 
   await Bundler.build({
-    entryPoints: [join('node_modules', 'nuejs', 'src', 'nue.js')],
+    entryPoints: [join('node_modules', 'nuejs-core', 'src', 'nue.js')],
     format: 'esm',
     bundle: true,
     outdir: 'www',
@@ -30,7 +30,7 @@ try {
 
 // no bundler -> just copy
 async function copyNue() {
-  const dir = join('node_modules', 'nuejs', 'src')
+  const dir = join('node_modules', 'nuejs-core', 'src')
   const files = await fs.readdir(dir)
   for (const name of files) {
     await fs.copyFile(join(dir, name), join('www', name))

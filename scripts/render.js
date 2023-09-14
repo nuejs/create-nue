@@ -6,8 +6,8 @@
   https://nuejs.org/docs/nuejs/server-components.html
 */
 
+import { parse, render } from 'nuejs-core'
 import { promises as fs } from 'node:fs'
-import { parse, render } from 'nuejs'
 import yaml from 'js-yaml'
 
 // read() function for reading assets
