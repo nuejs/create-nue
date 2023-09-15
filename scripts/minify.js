@@ -17,16 +17,17 @@ try {
     format: 'esm',
     bundle: true,
     outdir: 'www',
-    minify: true
+    minify: true,
   })
 
-  console.log('Minified Nue to wwwl/nue.js with', process.isBun ? 'Bun' : 'ESBuild')
-
+  console.log(
+    'Minified Nue to wwwl/nue.js with',
+    process.isBun ? 'Bun' : 'ESBuild'
+  )
 } catch (e) {
   console.log('No builder found (esbuild or Bun)', 'www/nue.js is not minified')
   await copyNue()
 }
-
 
 // no bundler -> just copy
 async function copyNue() {
@@ -36,5 +37,3 @@ async function copyNue() {
     await fs.copyFile(join(dir, name), join('www', name))
   }
 }
-
-

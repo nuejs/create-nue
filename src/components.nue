@@ -1,25 +1,26 @@
-
 <!--
   Library of server-side components used by layout.nue
 
   See: scripts/render.js
 -->
 
-
 <!-- site header -->
 <header @name="site-header" class="mastnav">
-  <a href="https://nuejs.org/"><img class="logo" :src="logo"></a>
+  <a href="https://nuejs.org/"><img class="logo" :src="logo" /></a>
   <nav>
-    <dialog-opener key="themes"/>
+    <dialog-opener key="themes" />
     <a href="https://github.com/{ github }">
-      <img src="img/github.svg" class="icon"></a>
+      <img src="img/github.svg" class="icon"
+    /></a>
   </nav>
 </header>
 
 <!-- generic/re-usable list component -->
 <ul @name="item-list">
   <li :for="el in data">
-    <h3>{ el.name }</h3><p>{ el.desc }</p></li>
+    <h3>{ el.name }</h3>
+    <p>{ el.desc }</p>
+  </li>
 
   <script>
     constructor({ items }) {

@@ -7,32 +7,35 @@ import fs from 'node:fs'
 
 const TYPES = {
   html: 'text/html; charset=UTF-8',
-  js:   'application/javascript',
-  svg:  'image/svg+xml',
-  ico:  'image/x-icon',
-  png:  'image/png',
-  jpg:  'image/jpg',
-  css:  'text/css'
+  js: 'application/javascript',
+  svg: 'image/svg+xml',
+  ico: 'image/x-icon',
+  png: 'image/png',
+  jpg: 'image/jpg',
+  css: 'text/css',
 }
 
 const PORT = 8080
 
-http.createServer(async (req, res) => {
-  let { url } = req
-  if (url.endsWith('/')) url += 'index.html'
-  const path = join('.', url)
-  const ext = extname(path).slice(1)
-  const head = { 'Content-Type': TYPES[ext] }
+http
+  .createServer(async (req, res) => {
+    let { url } = req
+    if (url.endsWith('/')) url += 'index.html'
+    const path = join('.', url)
+    const ext = extname(path).slice(1)
+    const head = { 'Content-Type': TYPES[ext] }
 
-  try {
-    res.writeHead(200, head)
-    fs.createReadStream(path).pipe(res)
+    try {
+      res.writeHead(200, head)
+      fs.createReadStream(path).pipe(res)
+    } catch (e) {
+      res.writeHead(404, head)
+      res.end('')
+    }
+  })
+  .listen(PORT)
 
-  } catch(e) {
-    res.writeHead(404, head)
-    res.end('')
-  }
-
-}).listen(PORT)
-
-console.log(process.isBun ? 'Bun' : 'Node', `HTTP server at http://127.0.0.1:${PORT}/`)
+console.log(
+  process.isBun ? 'Bun' : 'Node',
+  `HTTP server at http://127.0.0.1:${PORT}/`
+)

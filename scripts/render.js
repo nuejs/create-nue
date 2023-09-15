@@ -11,16 +11,17 @@ import { promises as fs } from 'node:fs'
 import yaml from 'js-yaml'
 
 // read() function for reading assets
-const read = async (name, dir='src') => await fs.readFile(dir + '/' + name, 'utf-8')
+const read = async (name, dir = 'src') =>
+  await fs.readFile(dir + '/' + name, 'utf-8')
 
 // read primary CSS
 const primary_css = await read('primary.css', 'www/css')
 
 // read dependencies (server-side components)
-const lib  = parse(await read('components.nue'))
+const lib = parse(await read('components.nue'))
 
 // read website data: title, description, etc.
-const data = yaml.load(await read('content.data'))
+const data = yaml.load(await read('./content/content.yml'))
 
 // read page layout
 const page = await read('layout.nue')
