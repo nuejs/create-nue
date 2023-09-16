@@ -19,7 +19,7 @@ The recommended way to get started is to clone a `create-nue` repository and pla
 
 ``` sh
 # clone the repository
-git clone git@github.com:nuejs/create-nue.git
+git clone https://github.com/nuejs/create-nue.git
 
 # cd to your newly created app
 cd create-nue
