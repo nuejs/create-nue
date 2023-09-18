@@ -1,5 +1,4 @@
-.DS_Store
-bun.lockb
-node_modules
-www/islands.js
-www/nue.js
+/build
+/dist
+/node_modules
+.swc
