@@ -12,10 +12,10 @@
   },
   "scripts": {
     "start": "npm run minify && npm run render && npm run compile && npm run serve",
-    "serve": "cd www && ../scripts/server.js",
-    "compile": "./scripts/compile.js",
-    "minify": "./scripts/minify.js",
-    "render": "./scripts/render.js"
+    "serve": "cd www && node ../scripts/server.js",
+    "compile": "node ./scripts/compile.js",
+    "minify": "node ./scripts/minify.js",
+    "render": "node ./scripts/render.js"
   },
   "dependencies": {
     "nuejs-core": "^0.1.0",
