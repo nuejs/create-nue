@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/bin/sh
+':' //; exec "$(command -v bun || command -v node)" "$0" "$@"
 
 /*
   Compile/transpile client-side nue- components to JavaScript

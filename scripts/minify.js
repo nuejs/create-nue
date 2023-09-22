@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/bin/sh
+':' //; exec "$(command -v bun || command -v node)" "$0" "$@"
 
 /*
   Minifies Nue JS files into a single JS file (nue.js)

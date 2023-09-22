@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/bin/sh
+':' //; exec "$(command -v bun || command -v node)" "$0" "$@"
 
 /*
   Generates a sample HTML page using Nue server-side rendering

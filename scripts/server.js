@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/bin/sh
+':' //; exec "$(command -v bun || command -v node)" "$0" "$@"
 
 // a super minimal web server to serve files on the current working directory
 import { join, extname } from 'node:path'
