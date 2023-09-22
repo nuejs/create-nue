@@ -21,13 +21,15 @@
 
   <section class="theme-options">
     <label :for="el, i in themes" :style="background-color: #{el.color}" class="theme">
-      <input name="theme" type="radio" :checked="!i" @change="change(el, $event)">
+      <input name="theme" type="radio" :checked="i === checkedIndex" @change="change(el, $event, i)">
       <h4>{ el.name }</h4>
     </label>
   </section>
 
   <script>
-    change(el, e) {
+    checkedIndex = 0
+    change(el, e, i) {
+      this.checkedIndex = i 
       document.body.className = el.class || el.name.toLowerCase()
       themes.close()
     }
