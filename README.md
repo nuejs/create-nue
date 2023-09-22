@@ -4,14 +4,15 @@
 </a>
 
 [Backstory](//nuejs.org/backstory/) •
-[Ecosystem](//nuejs.org/ecosystem/) •
+[Ecosystem](//nuejs.org/tools/) •
+[Examples](//nuejs.org/docs/nuejs/examples/) •
 [Documentation](//nuejs.org/docs/nuejs/)
 
 
 # create-nue
 A recommended way to start a Nue project
 
-This project is the "Hello, world" application for Nue. It currently shows only the power of the [Nue JS](//nuejs.org/docs/nuejs/) UI library. Eventually this project demonstrates all the features of the [Nue ecosystem](//nuejs.org/ecosystem/), like rich HTML pages written with Markdown- like syntax and universal hot reloading.
+This project is the "Hello, world" application for Nue. It currently shows only the power of the [Nue JS](//nuejs.org/docs/nuejs/) UI library. Eventually this project demonstrates all the features of the whole [toolset](//nuejs.org/tools/), like rich HTML pages written with Markdown- like syntax and universal hot reloading.
 
 
 ## Installation
