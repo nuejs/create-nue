@@ -11,6 +11,10 @@
     "type": "git"
   },
   "bin": {
+    "minify": "./scripts/minify.js",
+    "render": "./scripts/render.js",
+    "compile": "./scripts/compile.js",
+    "serve": "./scripts/server.js",
     "create-nue": "./scripts/init.js"
   },
 
@@ -19,7 +23,8 @@
     "serve": "cd www && ../scripts/server.js",
     "compile": "./scripts/compile.js",
     "minify": "./scripts/minify.js",
-    "render": "./scripts/render.js"
+    "render": "./scripts/render.js",
+    "bun": "bun run <script-name>"
   },
   "dependencies": {
     "nuejs-core": "^0.1.0",
