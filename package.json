@@ -17,10 +17,10 @@
 
   "scripts": {
     "start": "nue create || (./scripts/cli.js minify --prod && ./scripts/cli.js render && ./scripts/cli.js compile && ./scripts/cli.js server)",
-    "minify": "nue minify",
-    "render": "nue render",
-    "compile": "nue compile",
-    "serve": "cd www && nue server"
+    "minify": "nue minify || ./scripts/cli.js minify --prod",
+    "render": "nue render || ./scripts/cli.js render",
+    "compile": "nue compile || ./scripts/cli.js compile",
+    "serve": "cd www && nue server || ./scripts/cli.js server"
   },
   "dependencies": {
     "nuejs-core": "^0.1.0",
