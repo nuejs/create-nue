@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 export const DEFAULT_OPTS = {
+  prod: false,
   port: 8080
 }
 

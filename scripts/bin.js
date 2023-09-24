@@ -4,6 +4,6 @@ import create from '../index.js'
 
 console.info('👍 Welcome to Nue!')
 
-const prompts = {}; // TODO: Implement parsing prompts
+const prompts = { prod: false } // TODO: Implement parsing prompts
 
-create(prompts);
+create(prompts)

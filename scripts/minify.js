@@ -10,6 +10,14 @@ import { promises as fs } from 'node:fs'
 import { join } from 'node:path'
 
 export default async function (opts) {
+  if (!opts.prod) {
+    // TODO: Scaffold template via package binary
+    const info = 'This feature is not yet available, please see https://github.com/nuejs/create-nue#installation'
+    console.warn(info)
+    await fs.writeFile('placeholder.txt', info)
+    process.exit(0)
+  }
+
   try {
     let Bundler = process.isBun ? Bun : await import('esbuild');
 

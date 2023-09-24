@@ -16,7 +16,7 @@
   },
 
   "scripts": {
-    "start": "nue create",
+    "start": "nue create || (./scripts/cli.js minify --prod && ./scripts/cli.js render && ./scripts/cli.js compile && ./scripts/cli.js server)",
     "minify": "nue minify",
     "render": "nue render",
     "compile": "nue compile",
