@@ -11,15 +11,16 @@
     "type": "git"
   },
   "bin": {
-    "create-nue": "./scripts/init.js"
+    "create-nue": "./scripts/init.js",
+    "nue": "./scripts/cli.js"
   },
 
   "scripts": {
-    "start": "npm run minify && npm run render && npm run compile && npm run serve",
-    "serve": "cd www && ../scripts/server.js",
-    "compile": "./scripts/compile.js",
-    "minify": "./scripts/minify.js",
-    "render": "./scripts/render.js"
+    "start": "nue create",
+    "minify": "nue minify",
+    "render": "nue render",
+    "compile": "nue compile",
+    "serve": "cd www && nue server"
   },
   "dependencies": {
     "nuejs-core": "^0.1.0",
