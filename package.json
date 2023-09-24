@@ -11,7 +11,7 @@
     "type": "git"
   },
   "bin": {
-    "create-nue": "./scripts/init.js",
+    "create-nue": "./scripts/bin.js",
     "nue": "./scripts/cli.js"
   },
 
