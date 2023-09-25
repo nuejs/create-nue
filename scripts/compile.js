@@ -7,8 +7,10 @@
 */
 import { compileFile } from 'nuejs-core'
 
-const target_js = 'www/islands.js'
-
-// compile nue source code for browser execution
-await compileFile('src/islands.nue', target_js)
-console.info('compiled', target_js)
+export default async function (opts) {
+  const target_js = 'www/islands.js'
+  
+  // compile nue source code for browser execution
+  await compileFile('src/islands.nue', target_js)
+  console.info('compiled', target_js)
+}
