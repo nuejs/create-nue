@@ -11,6 +11,10 @@
   },
   "bin": "./src/binary.js",
   "exports": "./index.js",
+  "engines": {
+		"bun": ">= 1.0.2",
+    "node": ">= 17.0.0"
+	},
   "scripts": {
     "start": "npm run minify && npm run render && npm run compile && npm run serve",
     "serve": "cd www && ../scripts/server.js",
