@@ -5,7 +5,6 @@
   "version": "0.1.3",
   "homepage": "https://github.com/nuejs/create-nue",
   "description": "A recommended way to start a Nue project",
-
   "repository": {
     "url": "https://github.com/nuejs/create-nue.git",
     "type": "git"
@@ -13,7 +12,7 @@
   "bin": {
     "create-nue": "./scripts/init.js"
   },
-
+  "exports": "./index.js",
   "scripts": {
     "start": "npm run minify && npm run render && npm run compile && npm run serve",
     "serve": "cd www && ../scripts/server.js",
