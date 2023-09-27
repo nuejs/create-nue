@@ -4,6 +4,7 @@
 import { join, extname } from 'node:path'
 import http from 'node:http'
 import fs from 'node:fs'
+import { networkInterfaces } from 'node:os'
 
 export default async function (opts) {
   const TYPES = {
@@ -36,5 +37,9 @@ export default async function (opts) {
   
   }).listen(PORT)
   
-  console.log(process.isBun ? 'Bun' : 'Node', `HTTP server at http://127.0.0.1:${PORT}/`)
+  // get network IP address
+  const NET_ADDR = networkInterfaces()?.eth0?.[0]?.address;
+  const ADD_INFO = NET_ADDR ? ` http://${NET_ADDR}:${PORT}/` : '';
+
+  console.log(process.isBun ? 'Bun' : 'Node', `HTTP server at http://127.0.0.1:${PORT}/` + ADD_INFO)
 }
