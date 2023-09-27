@@ -1,5 +1,5 @@
 
-import start from './start'
+import start from './start.js'
 
 console.info('👍 Welcome to Nue!')
 await start()
