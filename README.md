@@ -22,18 +22,22 @@ The recommended way to get started is to clone a `create-nue` repository and pla
 # clone the repository
 git clone https://github.com/nuejs/create-nue.git
 
-# cd to your newly created app
+# cd to the cloned repository
 cd create-nue
 
 # install dependencies
-npm install
+bun install # or with Node: npm install
 
 # Build demo site and start a HTTP server
-npm run start
+bun --bun start # or with Node: npm run start
 
 # Open the demo on the browser
 open "http://localhost:8080"
+
+# optional: detach the repository from github
+rm -rf .git
 ```
+
 
 
 ## Demo website
