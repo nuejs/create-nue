@@ -20,7 +20,7 @@
     "minify": "nue minify || ./scripts/cli.js minify --prod",
     "render": "nue render || ./scripts/cli.js render",
     "compile": "nue compile || ./scripts/cli.js compile",
-    "serve": "cd www && nue server || ./scripts/cli.js server"
+    "serve": "nue server || ./scripts/cli.js server"
   },
   "dependencies": {
     "nuejs-core": "^0.1.0",

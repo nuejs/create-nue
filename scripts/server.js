@@ -22,7 +22,7 @@ export default async function (opts) {
   http.createServer(async (req, res) => {
     let { url } = req
     if (url.endsWith('/')) url += 'index.html'
-    const path = join('.', url)
+    const path = join('www', url)
     const ext = extname(path).slice(1)
     const head = { 'Content-Type': TYPES[ext] }
   
