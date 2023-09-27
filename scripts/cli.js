@@ -1,13 +1,10 @@
 #!/usr/bin/env node
 
-import { DEFAULT_OPTS } from './create.js'
-
-const argv = process.isBun ? Bun.argv : process.argv
-const script = argv[2]
-const opts = { ...DEFAULT_OPTS, ...{ prod: argv[3] == '--prod' } }
+const script = process.argv[2]
 
 try {
-  (await import(`./${script}.js`)).default(opts)
-} catch {
-  console.error(`Invalid script name: ${script}`)
+  (await import(`./${script}.js`)).default()
+} catch (e) {
+  console.info(e)
+  console.error('Invalid script:', script)
 }

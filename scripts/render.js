@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /*
   Generates a sample HTML page using Nue server-side rendering
@@ -10,7 +9,7 @@ import { parse, render } from 'nuejs-core'
 import { promises as fs } from 'node:fs'
 import yaml from 'js-yaml'
 
-export default async function (opts) {
+export default async function () {
   // read() function for reading assets
   const read = async (name, dir='src') => await fs.readFile(dir + '/' + name, 'utf-8')
   

@@ -11,17 +11,17 @@
     "type": "git"
   },
   "bin": {
-    "create-nue": "./scripts/bin.js",
-    "nue": "./scripts/cli.js"
+    "create-nue": "./scripts/init.js"
   },
 
   "scripts": {
-    "start": "nue create || (./scripts/cli.js minify --prod && ./scripts/cli.js render && ./scripts/cli.js compile && ./scripts/cli.js server)",
-    "minify": "nue minify || ./scripts/cli.js minify --prod",
-    "render": "nue render || ./scripts/cli.js render",
-    "compile": "nue compile || ./scripts/cli.js compile",
-    "serve": "nue server || ./scripts/cli.js server"
+    "start": "./scripts/cli.js start",
+    "minify": "./scripts/cli.js minify",
+    "render": "./scripts/cli.js render",
+    "compile": "./scripts/cli.js compile",
+    "serve": "./scripts/cli.js serve"
   },
+
   "dependencies": {
     "nuejs-core": "^0.1.0",
     "js-yaml": "^4.1.0"

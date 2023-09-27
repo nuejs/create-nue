@@ -1,9 +1,5 @@
-#!/usr/bin/env node
 
-console.info(`
-👍 Welcome to Nue!
+import start from './start'
 
-Please cd to your new app and run following:
-
-npm run start
-`)
+console.info('👍 Welcome to Nue!')
+await start()

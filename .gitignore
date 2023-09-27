@@ -3,3 +3,5 @@ bun.lockb
 node_modules
 www/islands.js
 www/nue.js
+www/for.js
+www/if.js

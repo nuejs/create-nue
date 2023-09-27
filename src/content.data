@@ -1,6 +1,5 @@
 
-# Website content and settings (in YAML format)
-
+# Website content and settings in YAML format (later with Nuemark)
 # Parsed and given as argument to SSR render() function
 # check: scripts/render.js
 

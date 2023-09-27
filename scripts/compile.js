@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /*
   Compile/transpile client-side nue- components to JavaScript
@@ -7,10 +6,7 @@
 */
 import { compileFile } from 'nuejs-core'
 
-export default async function (opts) {
-  const target_js = 'www/islands.js'
-  
-  // compile nue source code for browser execution
-  await compileFile('src/islands.nue', target_js)
-  console.info('compiled', target_js)
+export default async function(to='www/islands.js') {
+  await compileFile('src/islands.nue', to)
+  console.info('compiled', to)
 }
