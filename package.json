@@ -9,9 +9,7 @@
     "url": "https://github.com/nuejs/create-nue.git",
     "type": "git"
   },
-  "bin": {
-    "create-nue": "./scripts/init.js"
-  },
+  "bin": "./src/binary.js",
   "exports": "./index.js",
   "scripts": {
     "start": "npm run minify && npm run render && npm run compile && npm run serve",
