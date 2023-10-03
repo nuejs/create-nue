@@ -21,7 +21,7 @@ export default async function () {
     })
 
     console.log(
-      'Minified Nue to wwwl/nue.js with',
+      'Minified Nue to www/nue.js with',
       process.isBun ? 'Bun' : 'ESBuild'
     )
   } catch (e) {
