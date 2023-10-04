@@ -15,11 +15,11 @@
   },
 
   "scripts": {
-    "start": "./scripts/cli.js start",
-    "minify": "./scripts/cli.js minify",
-    "render": "./scripts/cli.js render",
-    "compile": "./scripts/cli.js compile",
-    "serve": "./scripts/cli.js serve"
+    "start": "node ./scripts/cli.js start",
+    "minify": "node ./scripts/cli.js minify",
+    "render": "node ./scripts/cli.js render",
+    "compile": "node ./scripts/cli.js compile",
+    "serve": "node ./scripts/cli.js serve"
   },
 
   "dependencies": {
