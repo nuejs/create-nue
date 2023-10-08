@@ -30,3 +30,8 @@
     }
   </script>
 </ul>
+
+<div @name="not-found">
+  <h2>404</h2>
+  <p>This page could not be found</p>
+</div>

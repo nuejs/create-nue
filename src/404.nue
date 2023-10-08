@@ -1,0 +1,22 @@
+
+<html>
+  <meta charset="utf-8">
+  <meta name="generator" content="Nue (nuejs.org)">
+  <meta name="date.updated" content="{ timestamp.toISOString() }">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="{ favicon }">
+  <title>{ title }</title>
+  <style>{ primary_css }</style>
+
+  <!-- header component (server-side) -->
+  <site-header :logo="logo" :github="github"/>
+
+  <main>
+    <not-found />
+    <footer>
+      <a href="/"><img :src="favicon" class="icon"></a>
+    </footer>
+  </main>
+
+</html>
+

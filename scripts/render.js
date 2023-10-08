@@ -24,16 +24,19 @@ export default async function () {
   
   // read page layout
   const page = await read('layout.nue')
+  const page404 = await read('404.nue')
   
   // set extra, dynamic properties to data
   data.primary_css = primary_css.replace(/\s+/g, ' ')
   data.timestamp = new Date()
   
   // generate HTML with the render() method
-  const html = '<!DOCTYPE html>\n\n' + render(page, data, lib)
+  const prefix = '<!DOCTYPE html>\n\n';
+  const html = prefix + render(page, data, lib)
+  const html404 = prefix + render(page404, data, lib)
   
-  // write index.html
+  // write index.html & 404.html
   await fs.writeFile('./www/index.html', html)
-  
-  console.log('wrote', 'www/index.html')
+  await fs.writeFile('./www/404.html', html404)
+  console.log('wrote', 'www/index.html, www/404.html')
 }

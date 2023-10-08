@@ -21,14 +21,14 @@ export default function(opts={}) {
   http.createServer(async (req, res) => {
     let { url } = req
     if (url.endsWith('/')) url += 'index.html'
-    const path = join(dir, url)
-    const ext = extname(path).slice(1)
+    let path = join(dir, url)
+    if (!fs.existsSync(path)) path = join(dir, '404.html')
+    const ext = extname(path).slice(1);
     const head = { 'Content-Type': TYPES[ext] }
   
     try {
       res.writeHead(200, head)
       fs.createReadStream(path).pipe(res)
-  
     } catch(e) {
       res.writeHead(404, head)
       res.end('')
