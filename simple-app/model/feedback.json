@@ -1,0 +1,43 @@
+[
+  {
+    "email": "nancy@figma.com",
+    "feedback": "I love how clean and organized my code looks with this library. Just ask me for a quote. Thank you! ❤️ ❤️",
+    "created": "2023-11-25"
+  }, {
+    "email": "sswatten1@yandex.ru",
+    "feedback": "The documentation is so clear and easy to follow, it’s been a breeze to learn",
+    "created": "2023-11-24"
+  }, {
+    "email": "adumbelton2@webnode.com",
+    "feedback": "The performance improvements are noticeable, my applications run smoother than ever",
+    "created": "2023-11-23"
+  }, {
+    "email": "igeggie3@symantec.com",
+    "feedback": "I appreciate the focus on standards compliance, it makes maintenance much simpler",
+    "created": "2023-11-22"
+  }, {
+    "email": "goswell4@japanpost.jp",
+    "feedback": "The simplicity of this library has really streamlined my workflow. Cheers from Norway 🇳🇴 🍻",
+    "created": "2023-11-20"
+  }, {
+    "email": "pshepperd5@freewebs.com",
+    "feedback": "I’ve been able to create beautiful, responsive designs with minimal effort",
+    "created": "2023-11-15"
+  }, {
+    "email": "steare6@com.com",
+    "feedback": "The community support for this library is fantastic, I always find help when I need it",
+    "created": "2023-11-09"
+  }, {
+    "email": "blerner7@yolasite.com",
+    "feedback": "It’s amazing how much I can achieve with so little code using this library",
+    "created": "2023-11-02"
+  }, {
+    "email": "cgabbatt8@imdb.com",
+    "feedback": "This library has completely changed the way I approach frontend development, in the best way possible",
+    "created": "2023-10-29"
+  }, {
+    "email": "ccapitano9@globo.com",
+    "feedback": "My development process has become much more efficient since I started using this library",
+    "created": "2023-10-27"
+  }
+]

@@ -1,0 +1,53 @@
+
+<header class="flex">
+  <a href="{base}/" class="flex homelink">
+    <img src="{base}{avatar}" alt="Avatar image" width="64" height="64">
+    <strong>{ fullname }</strong>
+  </a>
+  <nav>
+    <a :for="el in social" href="{ el.url }">
+      <img class="icon" src="{base}/img/{el.icon}.svg" :alt="el.alt" width="30" height="30">
+    </a>
+  </nav>
+</header>
+
+<main>
+  <slot for="content"/>
+  <blog-posts :posts/>
+</main>
+
+<footer class="flex">
+  <a href="{base}/">© { fullname }</a>
+  <strong>{ slogan }</strong>
+
+  <!-- reactive feedback widget -->
+  <img src="{base}/img/feedback.svg" class="open-feedback" onclick="feedback.showModal()">
+  <feedback-dialog id="feedback"/>
+</footer>
+
+
+<!-- reusable modules -->
+<article @name="blog-posts">
+  <a :for="post,i in posts" href="{base}{post.url}" class="flex post">
+
+    <img src="{base}{ post.dir }/{ post.hero }" width="400" height="200"
+      alt="Poster image for { post.title }" :loading="!i ? 'lazy' : 'eager'">
+
+    <aside>
+      <h2>{ post.title }</h2>
+      <pretty-date :date="post.pubDate"/>
+    </aside>
+  </a>
+</article>
+
+<time @name="pretty-date">
+  { pretty }
+
+  <script>
+    constructor({ date }) {
+      this.pretty = new Date(date).toLocaleDateString('en-us', {
+        month: 'long', day: 'numeric', year: 'numeric'
+      })
+    }
+  </script>
+</time>

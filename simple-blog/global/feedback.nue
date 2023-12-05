@@ -1,0 +1,41 @@
+
+
+<dialog @name="feedback-dialog">
+
+  <a class="close" @click="root.close()">&times;</a>
+
+  <div :if="thanks" class="thanks">
+    <h2>Thank you!</h2>
+    <p>Demo mode: No data was submitted</p>
+  </div>
+
+  <form @submit.prevent="submit" autocomplete="on" :else>
+    <h2>Give us feedback</h2>
+    <p>Nothing is actually submitted on this demo</p>
+
+    <div>
+      <h3>Your name</h3>
+      <input type="text" name="name" placeholder="Example: John Doe" required>
+    </div>
+
+    <div>
+      <h3>Your email</h3>
+      <input type="email" name="email" placeholder="your@email.com" required>
+    </div>
+
+    <div>
+      <h3>Your thoughts</h3>
+      <textarea name="feedback" placeholder="Type here..."/>
+    </div>
+
+    <button>Submit</button>
+
+  </form>
+
+  <script>
+    submit({ target }) {
+      this.thanks = true
+    }
+  </script>
+
+</dialog>

@@ -1,0 +1,35 @@
+
+<section @name="analytics-view">
+  <h2>Monthly visitors</h2>
+  <bar-chart :data="visitors" class="main chart"/>
+
+  <h2>Monthly new leads</h2>
+  <bar-chart :data="leads" class="secondary chart"/>
+
+  <h2>Monthly active users</h2>
+  <bar-chart :data="users" class="secondary chart"/>
+</section>
+
+
+<figure @name="bar-chart">
+
+  <div :for="el in items">
+    <b>{ format(el.amount) }</b>
+    <div class="bar" :style="flex: { el.ratio }"/>
+  </div>
+
+  <script>
+    format(am) {
+      return am > 1000 ? Math.round(am / 100) / 10 + 'k' : am
+    }
+
+    constructor({ data }) {
+      const max = Math.max(...data)
+
+      this.items = data.map(amount => {
+        const ratio = amount/max
+        return { ratio, amount }
+      })
+    }
+  </script>
+</figure>

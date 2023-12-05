@@ -1,0 +1,95 @@
+
+<script>
+  import { router as url } from '../@nue/app-router.js'
+  import { getPeople } from '../model/index.js'
+</script>
+
+<article @name="people-view">
+  <h1>{ view.title }</h1>
+
+  <header>
+    <input name="search" type="search" @input="render"
+      :value="url.data.search"
+      placeholder="Search { view.type }">
+
+    <label>
+      <b>Sort by:</b>
+      <select name="sort" @change="render">
+        <option
+          :for="[value, label] in Object.entries(view.sorting)"
+          :selected="value == url.data.sort"
+          :value="value">{ label }</option>
+      </select>
+    </label>
+
+    <label>
+      <b>Show:</b>
+      <select name="limit" @change="render">
+        <option
+          :for="limit in limits"
+          :selected="limit == url.data.limit"
+          :value="limit">{ limit } rows</option>
+      </select>
+    </label>
+  </header>
+
+  <table @name="member-table">
+    <thead>
+      <tr>
+        <th colspan="2">{ total.toLocaleString() } { view.type }</th>
+        <th :for="col in view.columns">{ col }</th>
+      </tr>
+    </thead>
+    <tr :for="el in people">
+      <td :if="!el.cc">
+        <avatar :name="el.name"/>
+      </td>
+      <td :if="el.cc">
+        <img src="//flagcdn.com/64x48/{ el.cc.toLowerCase() }.png" class="country-flag">
+      </td>
+      <td>
+        <h3>{{ hilite(el.name) }}</h3>
+        <p>{{ hilite(el.email) }}</p>
+      </td>
+      <td :if="el.country">{ el.country }</td>
+      <td :if="el.plan"><b class="tag plan-{el.plan}">{ el.plan }</b></td>
+      <td :if="el.card">
+        <div class="credit-card">
+          <img src="img/{ el.card }.svg">
+          <span>•••• { el.csv }</span>
+        </div>
+      </td>
+      <td>
+        <h4>{ dateFormat(el.created) }</h4>
+        <timeago :ts="el.created"/>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    limits = [30, 60, 90]
+    url = url
+
+    dateFormat(ts) {
+      return new Date(ts).toLocaleDateString('en-US', {
+        year: 'numeric', month: 'short', day: 'numeric'
+      })
+    }
+
+    hilite(label) {
+      const { search } = url.data
+      const re = search && new RegExp(`(${search})`, 'i')
+      return search ? label.replace(re, s => `<mark>${s}</mark>`) : label
+    }
+
+    render({ target }) {
+      url.set(target.name, target.value)
+      getPeople(url.data).then(this.update)
+    }
+
+    oninsert(node, item, loop) {
+      setTimeout(() => node.classList.add('fade-in'), 30 * loop.index)
+    }
+  </script>
+  
+</article>

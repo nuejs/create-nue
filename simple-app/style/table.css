@@ -1,0 +1,62 @@
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  font-size: 95%;
+}
+
+td {
+  border-bottom: 1px solid #eee;
+  padding: .8em 0;
+}
+
+td a {
+  color: #008cff;
+  text-decoration: none;
+}
+
+td strong {
+  font-weight: 500;
+  color: black;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+td:last-child {
+  text-align: right;
+  font-size: 90%;
+  color: #555;
+  font-weight: 500;
+}
+
+/* avatars  */
+td img {
+  border-radius: 99em;
+  width: 2.6em;
+  height: auto;
+  outline: 1px solid #ddd;
+  outline-offset: 2px;
+  margin-right: .6em;
+}
+
+
+/* feedback  */
+q {
+  margin: .7em 0 0;
+  display: block;
+  max-width: 27em;
+  line-height: 1.5;
+  color: #777;
+  text-indent: -.3em;
+}
+
+q::before {
+  content: open-quote;
+  color: #ccc;
+}
+q::after {
+  content: close-quote;
+  color: #ccc;
+}

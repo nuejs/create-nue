@@ -1,0 +1,60 @@
+
+/* readme page (markdown) */
+
+.readme {
+  background-color: white;
+  max-width: 600px;
+  margin: 4em auto;
+  padding: 1.5em 3em;
+  line-height: 1.5;
+  box-shadow: 0 2px 1em #0002;
+  color: #333;
+  border-radius: 1em;
+  color: #555;
+}
+
+.readme h1 {
+  font-size: 2.3em;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0 0 .2em;
+  color: black;
+}
+
+.readme h1 + p {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+
+.readme ul {
+  padding-left: 1em;
+  margin: 0 0 1.5em;
+  line-height: 1.7;
+}
+
+.readme h3 {
+  font-size: 1.1em;
+  margin: 0 0 .2em;
+  color: black
+}
+
+
+/* back to SPA front page ("close" link) */
+.readme a {
+  display: inline-block;
+  float: right;
+  font-family: helvetica, arial;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 1;
+  margin-top: -.8em;
+  margin-right: -.8em;
+  color: #999;
+  cursor: pointer;
+}
+
+.readme a:hover {
+  color: black;
+}

@@ -1,0 +1,41 @@
+
+.chart {
+  display: flex;
+  height: 12em;
+  margin: 0;
+  gap: 1vw;
+  margin-bottom: 4em;
+  border-bottom: 1px dashed #999;;
+  background: linear-gradient(0deg,
+    white 33%, #eee 33.5%, white 33.9%,
+    white 66%, #ddd 66.5%, white 66.9%,
+    white 99%, #eee 99.5%, white 99.9%
+  );
+}
+
+.chart > div {
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-bottom: 1px;
+  display: flex;
+  flex: 1;
+}
+
+.bar {
+  background-color: #008cff;
+  border-radius: 3px 3px 0 0;
+}
+
+.chart b {
+  max-height: 1px;
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 76%;
+  top: -1.5em;
+  width: 100%;;
+}
+
+.secondary .bar {
+  background-color: #b9c9d7;
+}

@@ -1,0 +1,27 @@
+
+/* responsive layout */
+
+img {
+  max-width: 100%;
+  border-radius: .6em;
+}
+
+@media (min-width: 700px) {
+
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: -.1em;;
+  }
+
+  img {
+    min-width: calc(100% + 100px);
+    margin-left: -50px;
+  }
+
+  body {
+    max-width: 600px;
+    margin: .8em auto;
+  }
+}

@@ -1,0 +1,26 @@
+
+<script>
+  const DARK = '064789 679436 427AA1 D55672 481620 363946 F34213 3E2F5B'
+  const LIGHT = 'A5BE00 F1E8B8 EBF2FA 00FFC5 E0CA3C EDF4ED CAD2C5 CCFF66'
+  const COLORS = (DARK + ' ' + LIGHT).split(' ')
+</script>
+
+<figure @name="avatar" class="avatar { is-dark: is_dark }" :style="bg()">
+  <img :if="icon" :src="icon">
+  <b :if="letter">{ letter }</b>
+
+  <script>
+    constructor({ name }) {
+      const letter = this.letter = name[0]
+      const num = letter.toLowerCase().charCodeAt(0) - 97
+      const i = Math.round(num / 2)
+      this.color = COLORS[i]
+      this.is_dark = i < 9
+    }
+
+    bg() {
+      return this.color && `background-color: #${this.color}`
+    }
+  </script>
+
+</figure>

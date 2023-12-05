@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Segoe UI, Roboto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  gap: .8em;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+header > :last-child {
+  margin-left: auto;
+}
+
+
+article {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 8rem;
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+footer > a, footer > strong {
+  font-weight: 400;
+  color: #888;
+}
+
+footer > :nth-child(2) {
+  margin-left: auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: #008dec;
+  font-weight: 500;
+}
+
+header a {
+  color: black;
+}
+
+.icon {
+  margin-left: .3em;
+  width: 1.4rem;
+  opacity: .4;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.homelink img {
+  width: 2.5em;
+  border-radius: 10em;
+}
+
+p {
+  line-height: 1.65;
+  margin: 0 0 1em;
+  color: #666;
+}
+
+h1 {
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 auto .3em;
+  font-size: 2.6rem;
+  max-width: 12em;
+}
+
+h1 + p {
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-weight: 300;
+  max-width: 35em;
+  color: #888;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: black;
+  max-width: 20em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+

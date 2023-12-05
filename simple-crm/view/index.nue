@@ -1,0 +1,44 @@
+
+<!--
+  Main layout with the global footer
+  Controls routing and how the (sub)views are rendered
+  This is the controller in the MVC pattern
+-->
+
+<script>
+  import { getPeople } from '../model/index.js'
+  import { router } from '../@nue/app-router.js'
+</script>
+
+<main @name="simple-admin">
+
+  <header>
+    <nav class="mastnav wrap">
+      <img class="logo" src="img/nue.svg">
+      <a href="{base}/">Members</a>
+      <a href="{base}/customers">Customers</a>
+      <a href="readme.html">Readme</a>
+    </nav>
+  </header>
+
+  <article id="article" class="wrap"/>
+
+  <script>
+    mounted(site_data) {
+
+      // base is needed  to make this work under: nuejs.org/@simple-admin
+      const base = this.base = site_data.base || ''
+
+      // render route
+      router.on(`${base}/:type`, async ({ type }) => {
+        const people = await getPeople(router.data)
+        const view = site_data[type || 'members']
+        this.mountChild('people-view', article, { type, view, ...people })
+      })
+
+      // start router
+      router.start({ path: `${base}/:type/:id`, root: this.root })
+    }
+  </script>
+
+</main>

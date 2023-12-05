@@ -1,0 +1,8 @@
+
+# generator settings
+globals: [global]
+home: home
+
+# site data
+github: //github.com/nuejs/create-nue
+docs: //nuejs.org/docs/nuejs/server-components.html

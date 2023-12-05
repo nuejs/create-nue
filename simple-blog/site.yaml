@@ -1,0 +1,28 @@
+
+avatar: /img/avatar.jpg
+favicon: /img/favicon.jpg
+fullname: Emma Bennet
+slogan: Less is More
+
+# OG image
+og: /img/og.jpg
+origin: https://nuejs.org
+
+social:
+  - icon: email
+    url: email:emma@bennet.co
+    alt: Emma Bennet email address
+  - icon: twitter
+    url: //twitter.com/tipiirai
+    alt: Twitter profile
+  - icon: github
+    url: //github.com/nuejs/
+    alt: Github projects
+  - icon: linkedin
+    url: //linkedin.com/in/tipiirai
+    alt: LinkedIn profile
+
+
+# nue config
+globals: [global]
+page_router: true

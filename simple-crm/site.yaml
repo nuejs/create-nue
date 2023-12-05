@@ -1,0 +1,26 @@
+
+title: Nue admin dashboard
+globals: [ view, style ]
+page_router: true
+
+# inline_css: true
+
+# View metadata
+members:
+  title: Members
+  type: members
+  columns: [From, Joined]
+  sorting:
+    created: Join date
+    cc: Location
+    name: Name
+    email: Email
+
+customers:
+  title: Customers
+  type: customers
+  columns: [Plan, Credit card, Subscribed]
+  sorting:
+    created: Date subscribed
+    card: Card type
+    plan: Plan

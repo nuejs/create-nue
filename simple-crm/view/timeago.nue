@@ -1,0 +1,20 @@
+<time @name="timeago">
+  { text }
+
+  <script>
+    constructor({ ts }) {
+      const hours = (Date.now() - ts) / 3600 / 1000
+      const days = hours / 24
+      const mins = hours * 60
+
+      this.text = mins < 1 ? 'Just now' :
+        mins < 1.5 ? 'A minute ago' :
+        mins < 60 ? `${ Math.round(mins) } minutes ago` :
+        hours < 1.5 ? 'An hour ago' :
+        hours < 24 ? `${ Math.round(hours) } hours ago` :
+        days < 1.5 ? 'Yesterday' :
+        days < 10 ? `${ Math.round(days) } days ago` :
+        (new Date(ts)).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+    }
+  </script>
+</time>

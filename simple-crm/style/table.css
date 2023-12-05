@@ -1,0 +1,103 @@
+
+table {
+  font-size: 83%;
+  width: 100%;
+  border-spacing: 0;
+  background-color: white;
+  padding: 1em 3em 2em;
+  margin-bottom: 3rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+thead {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+th {
+  text-align: left;
+  background-color: white;
+  padding: 1.5em 4em 1.5em 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+  font-weight: 550;
+  font-size: 90%;
+  color: #555;
+}
+
+
+td {
+  color: #aaa;
+  padding: 1em 2em;
+  padding-left: 0;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+td h3 {
+  font-size: 105%;
+  margin: 0 0 .4em;
+  color: #444;
+}
+
+td h4 {
+  font-size: 100%;
+  margin: 0 0 .4em;
+  font-weight: 500;
+  color: #555;
+}
+
+td p {
+  margin: 0;
+}
+
+/* margin above table body */
+tr:first-child td {
+  padding-top: 2em;
+}
+
+/* avatar or image */
+td:first-child {
+  width: 3.5rem;
+}
+
+/* main cell */
+td:nth-child(2) {
+  width: 70%;
+}
+
+th:last-child, td:last-child {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* responsive table */
+@media (max-width: 750px) {
+  td:nth-child(2) {
+    width: 40%;
+  }
+  th:nth-child(n+3), td:nth-child(n+4) {
+    display: none;
+  }
+  th:nth-child(n+2), td:nth-child(n+3) {
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+
+/* animation */
+tbody tr {
+  opacity: 0;
+  transition: opacity .4s, transform .4s;
+  transform: translateY(-.9em);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

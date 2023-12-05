@@ -1,29 +1,20 @@
-
 {
   "name": "create-nue",
   "type": "module",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "homepage": "https://github.com/nuejs/create-nue",
-  "description": "A recommended way to start a Nue project",
-
+  "description": "Create a Nue-powered blog, website or single-page application with the power of universal hot-reloading",
   "repository": {
     "url": "https://github.com/nuejs/create-nue.git",
     "type": "git"
   },
-  "bin": {
-    "create-nue": "./scripts/init.js"
+  "engines": {
+    "bun": ">= 1"
   },
-
-  "scripts": {
-    "start": "./scripts/cli.js start",
-    "minify": "./scripts/cli.js minify",
-    "render": "./scripts/cli.js render",
-    "compile": "./scripts/cli.js compile",
-    "serve": "./scripts/cli.js serve"
-  },
-
+  "main": "cli.js",
+  "bin": { "create-nue": "./init.js" },
   "dependencies": {
-    "nuejs-core": "^0.1.0",
-    "js-yaml": "^4.1.0"
+    "@clack/prompts": "^0.7.0",
+    "picocolors": "^1.0.0"
   }
 }

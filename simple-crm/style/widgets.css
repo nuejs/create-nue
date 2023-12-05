@@ -1,0 +1,61 @@
+
+.avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  text-align: center;
+  margin: 0;
+  border-radius: 2rem;
+}
+
+/* kamis */
+.avatar b {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 2.2;
+  color: black;
+}
+
+.is-dark b {
+  color: white;
+}
+
+
+.tag {
+  background-color: #dff7ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: .3em .6em;
+  border-radius: .3em;
+  font-weight: 500;
+  color: #0090c0;
+  font-size: 75%;
+  display: inline-block;
+}
+
+.plan-free {
+  border: 1px solid #eee;
+  background: #fff;
+  color: #333;
+}
+
+.plan-enterprise {
+  background-color: #666;
+  color: white;
+}
+
+.credit-card {
+  display: inline-flex;
+  align-items: center;
+  color: #666;
+}
+
+.credit-card img {
+  margin-right: .5em;
+  width: 2rem;
+}
+
+.country-flag {
+  width: 2.4em;
+  min-width: 2.4em;
+}
+

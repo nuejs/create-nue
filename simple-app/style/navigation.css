@@ -1,0 +1,29 @@
+
+/* master navigation */
+nav {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1em 0;
+  display: inline-block;
+  color: #777;
+  font-weight: 500;
+  margin-right: 1.5em;
+  text-align: center;
+  min-width: 4em;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1.5px;
+}
+
+nav a:hover {
+  border-color: #ccc;
+  color: #222;
+}
+
+nav a.selected {
+  color: black;
+  border-color: black;
+}

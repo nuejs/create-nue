@@ -1,0 +1,31 @@
+
+
+h2 {
+  margin: 4em 0 1em;
+}
+
+.hero {
+  border-radius: 20px;
+  margin-bottom: 5rem;
+  display: block;
+}
+
+article img {
+  border-radius: 8px;
+  margin: 2em 0;
+}
+
+blockquote {
+  border-left: 5px solid black;
+  margin: 2.5em 0;
+  padding-left: 1.5em;
+}
+
+blockquote p {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 140%;
+  color: black;
+}
+
+

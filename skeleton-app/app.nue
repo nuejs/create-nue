@@ -1,0 +1,28 @@
+
+<script>
+  import { router } from '/@nue/app-router.js'
+</script>
+
+<main @name="app">
+  <nav>
+    <a href="/">Home</a>
+    <a href="/users">Users</a>
+  </nav>
+
+  <article id="container"/>
+
+  <script>
+    mounted() {
+
+      router.on('/', () => {
+        this.mountChild('home-view', container)
+      })
+
+      router.on('/users', () => {
+        this.mountChild('users-view', container)
+      })
+
+      router.start(this)
+    }
+  </script>
+</main>

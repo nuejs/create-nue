@@ -1,0 +1,55 @@
+
+/* form elements  */
+:focus-visible {
+  outline: 2px solid #dbf4ff;
+  border-color: #00afff;
+  outline-offset: 2px;
+}
+
+form > :last-child {
+  margin-top: 1em;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input, textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: .7em 1em;
+  width: 100%;
+}
+
+textarea {
+  form-sizing: normal;
+  min-height: 80px;
+}
+
+select {
+  background: url(../img/angle-down.svg) 100% 60% no-repeat;
+  background-size: 1.2rem;
+  appearance: none;
+  border: 0;;
+  padding-right: 1.5rem;
+  height: 2em;
+}
+
+[type=search] {
+  background: url(../img/search.svg) .7rem 52% no-repeat;
+  background-size: 1.2rem;
+  background-color: white;
+  padding-left: 2.5rem;
+  transition: width .2s;
+  max-width: 40vw;
+  width: 22em;
+}
+
+[type=search]:focus {
+  width: 28em;
+}
+
+::placeholder {
+  color: #bbb;
+}

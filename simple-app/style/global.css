@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Segoe UI, Roboto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em 5%;
+}
+
+header {
+  background: url(../img/nue-logo.svg) no-repeat 0 50%;
+  background-size: 3rem;
+  padding-left: 4rem;
+  margin-bottom: 2em;
+}
+
+main {
+  font-size: .9rem;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin: 0 0 .2em;
+  font-weight: 550;
+}
+
+h1 + p {
+  font-size: 90%;
+}
+
+h2 {
+  font-size: .95em;
+  font-weight: 400;
+  margin: 3em 0 1em;
+}
+
+p {
+  margin: 0 0 1em;
+  color: #999;
+}
+

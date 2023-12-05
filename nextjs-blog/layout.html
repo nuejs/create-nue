@@ -1,0 +1,22 @@
+
+<header>
+  The source code for this blog is <a :href="github">available on GitHub</a>
+</header>
+
+<footer>
+  <h2>Statically Generated with Nue</h2>
+  <p><a class="button" :href="docs">Read Documentation</a></p>
+  <a :href="github">View on GitHub</a>
+</footer>
+
+<time @name="pretty-date">
+  { pretty }
+
+  <script>
+    constructor({ date }) {
+      this.pretty = new Date(date).toLocaleDateString('en-us', {
+        month: 'long', day: 'numeric', year: 'numeric'
+      })
+    }
+  </script>
+</time>

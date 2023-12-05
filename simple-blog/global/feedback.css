@@ -1,0 +1,153 @@
+/* feedback dialog */
+dialog {
+  border-color: white;
+  box-shadow: 0 0 4em #999;
+  border-radius: 6px;
+  max-width: 26em;
+  padding: 2em;
+  font-size: 90%;
+  width: 85%;
+  margin-top: 15vh;
+}
+
+dialog::backdrop {
+  background-color: #0005;
+}
+
+dialog h2 {
+  margin: 0;
+}
+
+dialog h3 {
+  margin-bottom: .4em;
+  font-size: 1em;
+}
+
+/* dialog close */
+.close {
+  position: absolute;
+  font-weight: 100;
+  font-size: 2em;
+  cursor: pointer;
+  right: .9rem;
+  color: #000;
+  top: .2rem;
+}
+
+.close:hover {
+  color: #666;
+}
+
+
+
+/* basic form styling  */
+.:focus-visible {
+  outline: 2px solid #dbf4ff;
+  border-color: #00afff;
+  outline-offset: 2px;
+}
+
+form > :last-child {
+  margin-top: 1em;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .7em 1em;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  form-sizing: normal;
+  min-height: 80px;
+}
+
+
+/* buttons */
+button {
+  background-color: #333;
+  font-family: inherit;
+  padding: .75em 1.5em;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  border: 0;
+}
+
+button:hover {
+  background-color: black;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* dialog */
+dialog {
+  border-color: white;
+  box-shadow: 0 0 4em #999;
+  border-radius: 6px;
+  max-width: 26em;
+  padding: 2em;
+  font-size: 90%;
+  width: 85%;
+  top: -5vh;
+}
+
+dialog::backdrop {
+  background-color: #0005;
+}
+
+dialog h2 {
+  margin: 0;
+}
+
+dialog h3 {
+  margin-bottom: .4em;
+  font-size: 1em;
+}
+
+/* dialog close */
+.close {
+  position: absolute;
+  font-weight: 100;
+  font-size: 2em;
+  cursor: pointer;
+  right: .9rem;
+  color: #000;
+  top: .2rem;
+}
+
+.close:hover {
+  color: #666;
+}
+
+
+/* feedback trigger element*/
+.open-feedback {
+  cursor: pointer;
+  margin-left: 1em;
+  width: 2em;
+}
+
+.open-feedback:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+.thanks {
+  background: url(../img/sparkles.svg) no-repeat;
+  background-size: 7em;
+  padding-top: 8em;
+}
+
+@media (min-width: 1000px) {
+  .open-feedback {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+  }
+}

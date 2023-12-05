@@ -1,0 +1,57 @@
+
+<!-- MVC Controller -->
+
+<script>
+  // import application router
+  import { router } from '/@nue/app-router.js'
+
+  // import business model (the JS heavy, non-UI functionality)
+  import model from './model/index.js'
+</script>
+
+<main @name="app">
+  <header>
+    <h1>{ title }</h1>
+    <p>{ description }</p>
+  </header>
+
+  <!-- navigation for our views (aka "pages" or "routes" )-->
+  <nav>
+    <a href="/">Users</a>
+    <a href="/feedback">Feedback</a>
+    <a href="/analytics">Analytics</a>
+  </nav>
+
+  <!-- container for the application views -->
+  <article id="container"/>
+
+  <!-- controller code -->
+  <script>
+
+    // after #container is mounted
+    mounted() {
+
+      // front page -> show users
+      router.on('/', async() => {
+        const users = await model.getUsers()
+        this.mountChild('users-view', container, { users })
+      })
+
+      // feedback page -> show feedback
+      router.on('/feedback', async() => {
+        const users = await model.getFeedback()
+        this.mountChild('feedback-view', container, { users })
+      })
+
+      // analytics page -> show analytics
+      router.on('/analytics', async() => {
+        const data = await model.getAnalytics()
+        this.mountChild('analytics-view', container, data)
+      })
+
+      // start routing & setup <nav> onclick handlers
+      router.start(this)
+    }
+  </script>
+
+</main>

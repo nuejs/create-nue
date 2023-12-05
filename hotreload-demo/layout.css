@@ -1,0 +1,38 @@
+
+/* global layout  */
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+  font-size: 95%;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #61686a;
+}
+
+header > a {
+  text-transform: uppercase;
+  border: 2px solid black;
+  letter-spacing: .05em;
+  padding: .4em .8em;
+  font-weight: 700;
+  font-size: 75%;
+  color: black;
+}
+
+nav {
+  display: flex;
+  gap: 1.5em;
+}
+
+footer {
+  border-top: 2px solid black;
+  margin: 5em 0 12em;
+  padding-top: .5em;
+  font-weight: 550;
+}

@@ -28,4 +28,4 @@ Please try to use the original style in the codebase. Do not introduce new rules
 
 4. Prefer `==` over `===`. Only strict equality only when truly needed, which is rarely
 
-Nue is not using Prettier or ESLint because they will increase the project size to 40MB. A single `.prettierrc.csj` file is preferred on the root directory. Not sure if [Biome](//biomejs.dev/) is better.
+Nue is not using Prettier or ESLint because they increase the project size with 40MB. `.prettierrc.yaml` file used instead.

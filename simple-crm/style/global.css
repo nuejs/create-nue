@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: #f9fafb;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Segoe UI, Roboto;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+main > header {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 3rem;
+}
+
+.mastnav {
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+}
+
+.mastnav a {
+  color: #6b7280;
+  font-size: 95%;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.7rem .5rem 1.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.mastnav a:not(.selected):hover {
+  color: #333;
+  border-color: #ddd;
+}
+
+.mastnav > a:last-child {
+  margin-left: auto;
+  border-color: transparent !important;
+}
+
+
+a.selected {
+  color: black;
+  border-color: black;
+  cursor: default;
+}
+
+.logo {
+  width: 2rem;
+}
+
+h1 {
+  margin: 0 0 .7em;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+article > header {
+  display: flex;
+  align-items: center;
+  font-size: 90%;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 99%;
+}
+
+article > header > :nth-child(2) {
+  margin: 0 1rem 0 auto;
+}
+
+@media (max-width: 750px) {
+  article header > :last-child {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main > nav {
+  border-bottom: 1px solid #ccc
+}

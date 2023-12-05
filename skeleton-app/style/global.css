@@ -1,0 +1,19 @@
+
+/* CSS reset */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Global layout */
+body {
+  margin: 5%;
+  font-family: avenir next, arial;
+}
