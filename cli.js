@@ -9,7 +9,8 @@ import color from 'picocolors';
 async function copyTemplate(name, to) {
   const s = p.spinner()
   s.start('Copying template')
-  const src = join(import.meta.dir, name)
+  const root = new URL('.', import.meta.url).pathname
+  const src = join(root, name)
   const filter = path =>  !path.includes(sep + '.')
   await fs.cp(src, to, { recursive: true, force: true, filter })
   s.stop(`Copied template ${name} to ${to}`)
