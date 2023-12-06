@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.2.0",
   "homepage": "https://github.com/nuejs/create-nue",
-  "description": "Create a Nue-powered blog, website or single-page application with the power of universal hot-reloading",
+  "description": "Develop websites and single-page applications faster with the power of universal hot-reloading",
   "repository": {
     "url": "https://github.com/nuejs/create-nue.git",
     "type": "git"
@@ -12,7 +12,7 @@
     "bun": ">= 1"
   },
   "main": "cli.js",
-  "bin": { "create-nue": "./init.js" },
+  "bin": { "create-nue": "./cli.js" },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.0.0"
