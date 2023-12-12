@@ -1,20 +1,12 @@
 
-# Contributing to Nue
+# Creating new templates
 
 First and foremost: thank you for helping with Nue! ❤️❤️
 
 
-### Guidelines
+### Most important
 
-1. **Most important** If you are adding a new feature, please _discuss it first_ by creating a new issue with the tag "New feature". You probably avoid doing redundant work, because not all features are automatically accepted. Nue JS strives for minimalism.
-
-2. Features that add lots of new code, complexity, or several new/heavy NPM packages are most likely rejected. Particularly if the first rule wasn't applied.
-
-3. Please add one fix/feature per pull request. Easier to accept and less potential merge conflicts.
-
-3. Please add a test for every bug fix
-
-3. Please write JavaScript (Not TypeScript)
+If you are adding a new template or a feature, please _discuss it first_ by creating a new issue.
 
 
 ### Formatting rules
@@ -28,4 +20,4 @@ Please try to use the original style in the codebase. Do not introduce new rules
 
 4. Prefer `==` over `===`. Only strict equality only when truly needed, which is rarely
 
-Nue is not using Prettier or ESLint because they increase the project size with 40MB. `.prettierrc.yaml` file used instead.
+5. HTML tag names with lowercase (obviously)
