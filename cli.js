@@ -1,18 +1,16 @@
-
 import { promises as fs } from 'node:fs'
 import { sep, join } from 'node:path'
 
 import * as p from '@clack/prompts'
 import color from 'picocolors';
 
-
 async function copyTemplate(name, to) {
   const s = p.spinner()
   s.start('Copying template')
   const root = new URL('.', import.meta.url).pathname
   const src = join(root, name)
-  const filter = path =>  !path.includes(sep + '.')
-  await fs.cp(src, to, { recursive: true, force: true, filter })
+  // const filter = path =>  !path.includes(sep + '.')
+  await fs.cp(src, to, { recursive: true, force: true })
   s.stop(`Copied template ${name} to ${to}`)
 }
 
