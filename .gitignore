@@ -3,3 +3,4 @@ node_modules
 nuejs.yaml
 Makefile
 .dist
+.idea
