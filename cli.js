@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict'
 
 import { promises as fs } from 'node:fs'
 import { sep, join } from 'node:path'
