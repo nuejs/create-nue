@@ -49,7 +49,7 @@ const template = await p.select({
     { value: 'skeleton-site', label: 'Skeleton website', hint: '"Hello, World!" only'},
     { value: 'skeleton-app', label: 'Skeleton app', hint: '"Hello, World!" only'},
     { value: 'hotreload-demo', label: 'Hot-reload demo', hint: 'From Nue front page'},
-    { value: 'simple-blog', label: 'Simple blog', hint: 'The blog fron Nue tutorial' },
+    { value: 'simple-blog', label: 'Simple blog', hint: 'The blog from Nue tutorial' },
     { value: 'simple-app', label: 'Simple app', hint: 'The single-page app from Nue tutorial' },
     { value: 'simple-crm', label: 'Simple CRM', hint: 'A more complex single-page application'},
     { value: '', label: 'Empty directory', hint: 'Start from scratch'},
