@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import { promises as fs } from 'node:fs'
 import { sep, join } from 'node:path'
 
