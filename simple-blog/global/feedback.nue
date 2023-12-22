@@ -2,7 +2,7 @@
 
 <dialog @name="feedback-dialog">
 
-  <a class="close" @click="root.close()">&times;</a>
+  <a class="close" href="#" @click="root.close()">&times;</a>
 
   <div :if="thanks" class="thanks">
     <h2>Thank you!</h2>
