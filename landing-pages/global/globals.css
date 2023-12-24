@@ -1,0 +1,31 @@
+
+:root {
+  --main: #07f;
+  --gray: #999;
+}
+
+/* variants */
+:root {
+  --main-dark: color-mix(in srgb, var(--main) 90%, black);
+  --main-light: color-mix(in srgb, var(--main) 90%, white);
+
+  --gray-dark: color-mix(in srgb, var(--gray) 50%, black);
+  --gray-light: color-mix(in srgb, var(--gray) 50%, white);
+}
+
+/* CSS "reset" */
+* { box-sizing: border-box }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4 { overflow-wrap: break-word }
+
+svg, picture, video, img { max-width: 100% }
+
+p, li { line-height: 1.5 }
+
+a { text-decoration: none }

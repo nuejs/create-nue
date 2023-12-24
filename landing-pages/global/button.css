@@ -1,0 +1,35 @@
+button, [role="button"] {
+  background-color: var(--main);
+  display: inline-block;
+  padding: 1em 2em;
+  transition: .1s;
+  font-weight: 550;
+  font-size: 105%;
+  color: white;
+  cursor: pointer;
+  border: 0;
+
+  &:hover {
+    background-color: var(--main-dark);
+    transform: scale(1.01);
+  }
+
+  &:active {
+    background-color: var(--main-light);
+    transform: scale(0.99);
+  }
+
+  &.secondary {
+    box-shadow: 0 0 0 1px var(--gray) inset;
+    background: transparent;
+    color: var(--gray-dark);
+
+    &:hover {
+      box-shadow: 0 0 0 1px black inset;
+      color: black;
+    }
+
+  }
+}
+
+

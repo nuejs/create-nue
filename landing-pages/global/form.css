@@ -1,0 +1,31 @@
+
+input, button, textarea, select { font: inherit }
+
+form > label {
+  display: block;
+  margin-bottom: 1.5em;
+  h3 {
+    font-size: 100%;
+  }
+}
+
+input, textarea {
+  border: 1px solid #999;
+  appearance: none;
+  padding: .8em 1em;
+  width: 100%;
+}
+
+:root {
+  accent-color: var(--main-light)
+}
+
+::placeholder {
+  color: var(--gray)
+}
+
+:focus-visible {
+  outline: 3px solid var(--main-light);
+  outline-offset: 1px
+}
+

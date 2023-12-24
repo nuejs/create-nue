@@ -3,4 +3,13 @@
 
 body {
   background: #f9f9f9;
+  background: image-set("logoed.png" 2x, url(logo.png) 1x);
+  color: green;
+
+  /* single comments */
+  em, li {color: #aa8 }
+
+  @media (orientation: landscape {
+    grid-auto-flow: column;
+  }
 }

@@ -1,0 +1,43 @@
+
+<header>
+  <a href="#"><img :src="logo"></a>
+  <nav>
+    <a :for="theme in themes" href="/{theme.toLowerCase()}">{ theme }</a>
+  </nav>
+
+  <nav>
+    <a href="#">Log in</a>
+    <a href="#" role="button">Get started</a>
+  </nav>
+</header>
+
+
+<main>
+  <slot for="content"/>
+</main>
+
+
+<footer>
+  Footer
+</footer>
+
+
+<form @name="join-list">
+  <h2>Join the mailing list</h2>
+
+  <label>
+    <h3>Your name</h3>
+    <input type="text" name="name" placeholder="Example: John Doe" required>
+  </label>
+
+  <label>
+    <h3>Your email</h3>
+    <input type="email" name="email" placeholder="your@email.com" required>
+  </label>
+
+  <label>
+    <h3>Your thoughts</h3>
+    <textarea name="feedback" placeholder="Type here..."/>
+  </label>
+  <button>Join list</button>
+</form>

@@ -1,0 +1,11 @@
+
+globals: [global]
+
+logo: /nue.svg
+
+themes:
+  - Functional
+  - Playful
+  - Heroic
+  - Minimal
+  - Badass
