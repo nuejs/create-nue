@@ -1,0 +1,43 @@
+
+main {
+  container-type: inline-size;
+}
+
+.grid {
+  grid-template-columns: var(--cols, 1fr 1fr);
+  gap: var(--gap, 2rem);
+  display: grid;
+
+  /* custom colspan */
+  > [style] {
+    grid-column: 1 / span var(--colspan)
+  }
+
+  @container (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @container (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabs {
+
+  > ul {
+    list-style: none;
+    > li {
+      display: none;
+    }
+    .selected {
+      display: block;
+    }
+  }
+
+  > nav {
+    .selected {
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
