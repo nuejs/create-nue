@@ -1,0 +1,47 @@
+
+brand: Acme Inc.
+
+globals: [style]
+logo: /img/nue.svg
+
+main_navi:
+  - Features
+  - Resources
+  - Community
+  - Enterprise
+  - Pricing
+
+social:
+  github: "//github.com/nuejs/nue"
+  linkedin: "#"
+  instagram: "#"
+  email: "email:tipiirai@gmail.com"
+
+footer_navi:
+  Product:
+    - Features
+    - Integrations
+    - Pricing
+    - Changelog
+    - Docs
+
+  Company:
+    - About us
+    - Blog
+    - Careers
+    - Customers
+    - Brand
+
+  Resources:
+    - Startup Program
+    - Community
+    - Contact
+    - Privacy Policy
+    - Terms of service
+
+  Developers:
+    - API
+    - Templates
+    - Status
+    - GitHub
+    - README

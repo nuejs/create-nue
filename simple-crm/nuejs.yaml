@@ -1,0 +1,4 @@
+
+base: /@simple-admin
+dist: .dist/nuejs
+inline_css: true

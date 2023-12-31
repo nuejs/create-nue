@@ -1,0 +1,125 @@
+/* background  */
+body {
+  &:before {
+    content: "";
+    background: linear-gradient(180deg,#000000 0%,rgba(0,0,0,0) 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  background: radial-gradient(
+    211% 113% at -66% 36%,
+    #0b014a 39%,
+    rgb(0,73,184) 51%,
+    rgb(50,100,227) 67%,
+    rgb(0, 204, 255) 77%,
+    rgb(110,255,211) 90%,
+    rgb(236,241,56) 100%
+  )
+}
+
+.hero {
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: inherit;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    background: linear-gradient(175deg, #fff, var(--blue));
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -.045em;
+    font-weight: 600;
+    font-size: calc(4em + 5vw);
+    color: white;
+    max-width: 8em;
+    line-height: .8;
+    padding-bottom: .4em;
+    margin: 0 auto -.1em;
+    background-clip: text;
+
+    /* subtitle */
+    + p {
+      margin: 0 auto 1.2em;
+      font-size: calc(1em + 1.3vw);
+      line-height: 1.3;
+      font-weight: 500;
+      max-width: 15em;
+      color: #fff;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: calc(2em + 6vw)
+    }
+  }
+}
+
+
+
+/* epic button */
+
+[role=button].epic {
+  border: .2em solid transparent;
+  background: radial-gradient(75% 75% at 50% 100%, #c2d8f4 0%, #fff 100%) padding-box,
+    radial-gradient(var(--gpos, 70% 90% at -10% -10%), #c2d8f4 0%, rgba(0,0,0,.5) 100%) border-box;
+  letter-spacing: -.025em;
+  font-size: calc(1em + .7vw);
+  box-shadow: 0 0 0 1px #fff5, 0 0 var(--press, .1em) black inset;
+  transition: .2s;
+
+  &:hover {
+    --gpos: 100% 30% at -30% 30%
+  }
+
+  &:active {
+    --gpos: 60% 30% at 30% 50%;
+    --press: .3em;
+  }
+
+  /* inner gradient text */
+  em {
+    background: linear-gradient(10deg, #000, #666);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+  }
+}
+
+
+/* tabs */
+.tabs {
+  margin: 3.5rem auto 0;
+  max-width: 1250px;
+  font-size: 90%;
+
+  > nav {
+    margin-bottom: 1.2em;
+
+    a { margin: 0 1em; }
+
+    .selected {
+      font-weight: 600;
+      color: white;
+    }
+  }
+
+  img {
+    box-shadow: 0 0 3em rgba(0,0,0,.5);
+    border-radius: 1.5em;
+    height: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 1000px) {
+    box-shadow: 0 0 5px #ffffff1c;
+    border-radius: 1.5em;
+    background: #0001;
+    padding: 1.5em 2em 1em;
+    font-size: 100%;
+  }
+}

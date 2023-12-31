@@ -2,7 +2,7 @@
 <header>
   <a href="#"><img :src="logo"></a>
   <nav>
-    <a :for="theme in themes" href="/{theme.toLowerCase()}">{ theme }</a>
+    <a :for="el in main_navi" href="#">{ el }</a>
   </nav>
 
   <nav>
@@ -18,25 +18,35 @@
 
 
 <footer>
-  Footer
+  <aside>
+    <h2>{ brand }</h2>
+    <p>
+      <a :for="[icon, href] in Object.entries(social)" :href>
+        <img src="/img/{ icon }.svg"></a>
+    </p>
+  </aside>
+  <div>
+    <nav :for="[cat, entries] in Object.entries(footer_navi)">
+      <h3>{ cat }</h3>
+      <a :for="el in entries" href="#">{ el }</a>
+    </nav>
+  </div>
 </footer>
 
 
 <form @name="join-list">
-  <h2>Join the mailing list</h2>
-
   <label>
-    <h3>Your name</h3>
+    <h4>Your name</h4>
     <input type="text" name="name" placeholder="Example: John Doe" required>
   </label>
 
   <label>
-    <h3>Your email</h3>
+    <h4>Your email</h4>
     <input type="email" name="email" placeholder="your@email.com" required>
   </label>
 
   <label>
-    <h3>Your thoughts</h3>
+    <h4>Your thoughts</h4>
     <textarea name="feedback" placeholder="Type here..."/>
   </label>
   <button>Join list</button>

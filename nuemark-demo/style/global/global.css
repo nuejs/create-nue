@@ -1,0 +1,50 @@
+
+/* reset */
+* { box-sizing: border-box }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4 { overflow-wrap: break-word }
+
+svg, picture, video, img { max-width: 100% }
+
+p, li { line-height: 1.5 }
+
+a { text-decoration: none }
+
+
+/* forms */
+
+input, textarea, select { font: inherit }
+
+form > label {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+input, textarea {
+  border-radius: var(--input-radius, .3em);
+  border: 1px solid var(--gray);
+  appearance: none;
+  padding: .8em 1em;
+  width: 100%;
+}
+
+:root {
+  accent-color: var(--main-100)
+}
+
+::placeholder {
+  color: var(--gray)
+}
+
+:focus-visible {
+  outline: 3px solid var(--main-100);
+  border-color: var(--main);
+  outline-offset: 1.5px
+}
+

@@ -1,0 +1,3 @@
+
+dist: .dist/nuejs
+base: /@simple-blog
