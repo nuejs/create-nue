@@ -1,22 +1,24 @@
+
 button, [role="button"] {
   background-color: var(--main);
+  border-radius: var(--button-radius, .3em);
   display: inline-block;
   padding: 1em 2em;
   transition: .1s;
   font-weight: 550;
   font-size: 105%;
-  color: white;
   cursor: pointer;
+  color: var(--gray-50);
+  text-align: center;
   border: 0;
 
   &:hover {
-    background-color: var(--main-dark);
+    background-color: var(--main-600);
     transform: scale(1.01);
   }
 
   &:active {
-    background-color: var(--main-light);
-    transform: scale(0.99);
+    transform: scale(0.98);
   }
 
   &.secondary {
@@ -28,8 +30,19 @@ button, [role="button"] {
       box-shadow: 0 0 0 1px black inset;
       color: black;
     }
-
   }
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabs > ul {
+  list-style: none;
+  padding: 0;
+
+  > li { visibility: hidden; height: 0 }
+  .selected { visibility: visible; height: auto }
+}
 

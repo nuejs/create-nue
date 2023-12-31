@@ -1,0 +1,79 @@
+
+html {
+  background-color: var(--gray-900);
+}
+
+body {
+  font-family: avenir next, inter;
+  color: var(--gray-200);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+}
+
+nav a {
+  color: var(--gray-100);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+main > section, body > footer {
+  background-color: var(--gray-900);
+  padding: 5rem 10% 6rem;
+}
+
+
+table {
+  th, td {
+    padding: .5em 0;
+    padding-right: 1em;
+    width: 10em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  th {
+    border-bottom: 1px solid var(--gray-700);
+    color: white;
+  }
+
+  td {
+    border-bottom: 1px solid var(--gray-800);
+    color: var(--gray);
+
+    &:first-child {
+      font-weight: 400;
+      color: var(--gray-100);
+    }
+  }
+
+  @media (max-width: 800px) {
+    font-size: 90%
+  }
+}
+
+form {
+  h4 {
+    margin: 0 0 .3em;
+    color: var(--gray-100);
+  }
+  input, textarea {
+    background-color: var(--gray-800);
+    border-color: var(--gray-700);
+    box-shadow: 0 0 5px black inset;
+    color: var(--gray-200);
+  }
+}
+
+::placeholder {
+  color: var(--gray-600)
+}
+
+:focus-visible {
+  outline-color: var(--main-700);
+}

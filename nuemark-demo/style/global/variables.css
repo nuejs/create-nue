@@ -1,0 +1,36 @@
+
+/* the only thing to set */
+:root {
+  --main: hsl(210 90% 50%);
+}
+
+
+/* variants */
+:root {
+  --main-50: color-mix(in srgb, var(--main) 8%, white);
+  --main-100: color-mix(in srgb, var(--main) 33%, white);
+  --main-200: color-mix(in srgb, var(--main) 66%, white);
+  --main-600: color-mix(in srgb, var(--main) 66%, black);
+  --main-700: color-mix(in srgb, var(--main) 33%, black);
+  --main-800: color-mix(in srgb, var(--main) 16%, black);
+
+
+  --gray-50: color-mix(in srgb, var(--gray) 12%, white);
+  --gray-100: color-mix(in srgb, var(--gray) 33%, white);
+  --gray-200: color-mix(in srgb, var(--gray) 66%, white);
+  --gray: color-mix(in srgb, var(--main) 15%, #aaa);
+  --gray-600: color-mix(in srgb, var(--gray) 66%, black);
+  --gray-700: color-mix(in srgb, var(--gray) 33%, black);
+  --gray-800: color-mix(in srgb, var(--gray) 16%, black);
+  --gray-900: color-mix(in srgb, var(--gray) 6%, black);
+
+  /* colors */
+  --yellow: color-mix(in srgb, var(--main) 5%, #ffff32);
+  --orange: color-mix(in srgb, var(--main) 5%, #ffb21b);
+  --violet: color-mix(in srgb, var(--main) 20%, #d15fff);
+  --magenta: color-mix(in srgb, var(--main) 20%, #ff21ff);
+  --red: color-mix(in srgb, var(--main) 10%, #ff2f2f);
+  --green: color-mix(in srgb, var(--main) 20%, #00cb00);
+  --blue: color-mix(in srgb, var(--main) 20%, #2c65ff);
+
+}
