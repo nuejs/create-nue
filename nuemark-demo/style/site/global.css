@@ -24,8 +24,9 @@ p {
 main > section, body > footer {
   background-color: var(--gray-900);
   padding: 5rem 10% 6rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
 
 table {
   th, td {

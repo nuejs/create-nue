@@ -30,7 +30,7 @@
 <article @name="blog-posts">
   <a :for="post,i in posts" href="{base}{post.url}" class="flex post">
 
-    <img src="{base}{ post.dir }/{ post.hero }" width="400" height="200"
+    <img src="{base}/{ post.dir }/{ post.hero }" width="400" height="200"
       alt="Poster image for { post.title }" :loading="!i ? 'lazy' : 'eager'">
 
     <aside>

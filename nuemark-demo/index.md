@@ -1,11 +1,12 @@
 
 ---
+inline_css: true
 sections: [.hero]
 appdir: home
 ---
 
 # Markdown with megapowers
-Meet the new standard for modern web teams.
+Meet a new content format for fast-moving web teams.
 
 [button.epic "*Learn how it works*"]
 
