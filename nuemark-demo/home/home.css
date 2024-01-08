@@ -1,7 +1,7 @@
 
 h2 {
   letter-spacing: -.03em;
-  font-size: 3.5em;
+  font-size: calc(1.6em + 2.2vw);
   line-height: 1.1;
   font-weight: 600;
   max-width: 12em;
@@ -15,8 +15,11 @@ h2 {
   }
 
   @media (max-width: 900px) {
-    font-size: 2.5em;;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 }
 
 
@@ -121,14 +124,14 @@ h2 {
     ul {
       list-style: none;
       padding: 0;
-    }
 
-    li {
-      background: url(/img/check-white.svg) 0 50% no-repeat;
-      padding-left: 1.5em;
-      background-size: 1em;
-      white-space: nowrap;
-      color: white;
+      li {
+        background: url(/img/check-white.svg) 0 50% no-repeat;
+        padding-left: 1.5em;
+        background-size: 1em;
+        white-space: nowrap;
+        color: white;
+      }
     }
 
     [role=button] { width: 100% }

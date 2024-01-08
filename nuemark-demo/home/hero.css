@@ -102,6 +102,8 @@ body {
 
     a { margin: 0 1em; }
 
+    a:hover { color: white };
+
     .selected {
       font-weight: 600;
       color: white;
@@ -119,7 +121,7 @@ body {
     box-shadow: 0 0 5px #ffffff1c;
     border-radius: 1.5em;
     background: #0001;
-    padding: 1.5em 4em 1em;
+    padding: 1.5em 4em 2.5em;
     font-size: 100%;
   }
 }

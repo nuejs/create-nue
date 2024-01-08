@@ -1,28 +1,26 @@
 
 ---
-inline_css: true
 sections: [.hero]
 appdir: home
+# inline_css: true
 ---
 
 # Markdown with megapowers
-Meet a new content format for fast-moving web teams.
+For content-first web teams.
 
 [button.epic "*Learn how it works*"]
 
-[tabs "Mosaic, Canooc, Interstellar, Flamingo"]
+[tabs "First tab, Second tab, Third tab"]
   [! home/img/ui1.jpg]
   ---
   [! home/img/ui5.jpg]
   ---
   [! home/img/ui3.jpg]
-  ---
-  [! home/img/ui2.jpg]
 
 
 ------------------
 
-## *Scale your site to any size* with the built-in CMS, AI-powered localization, and site maintenance tools.
+## *Scale to any size* with extended Markdown, universal hot-reloading, and semantic CSS.
 
 [.cards.a]
   ### Semantic design system
@@ -30,13 +28,13 @@ Meet a new content format for fast-moving web teams.
 
   [! home/img/design-system.png]
   ---
-  ### Content-first
+  ### Static markup
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
   [! home/img/100.png width="250"]
 
 [.cards.b]
-  ### Extreme performance
+  ### Content first
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
   [! home/img/typography.png]
@@ -49,7 +47,7 @@ Meet a new content format for fast-moving web teams.
 
 
 
-## *Start for free* and upgrade to unlock more features. {#pricing}
+## *Start for free* and upgrade to these random features. {#pricing}
 
 [.pricing.cards]
   Free
@@ -58,9 +56,9 @@ Meet a new content format for fast-moving web teams.
 
   * For small teams
   * Up to 5 editors
-  * Collaborate on all sites
-  * Cursor chat
-  * 7 day version history
+  * Collaboration
+  * Live chat widget
+  * 7 day retention
   * 1GB file storage
 
   [button href="#" "Get started"]
@@ -72,11 +70,11 @@ Meet a new content format for fast-moving web teams.
 
   * For larger sites
   * Unlimited pages
-  * Analytics + cookies
+  * Web analytics
   * Staging environment
-  * 10 CMS collections
-  * 200,000 visitors/mo
-  * 300 page search
+  * Live content management
+  * Site search
+  * 500k visitors/mo
 
   [button href="#" "Get started"]
 
@@ -94,31 +92,34 @@ Meet a new content format for fast-moving web teams.
   * SSO for sites
   * Custom limits
 
-  [button href="#" "Learn more"]
+  [button href="#" "Get started"]
 
 
-[table head="Features *With annual discount*, Free *€0 forever*, Basic *€30 / month*, Pro *€90 / month*"]
-  - Shared editing              | * | * | *
-  - Custom views                | * | * | *
-  - Basic automations           | * | * | *
-  - AI Compose                  | * | * | *
-  - Ticketing system            | * | * | *
-  - Public help center          | * | * | *
-  - Unlimited collections       |   | * | *
-  - Help ustomization           |   | * | *
-  - Multiple team members       |   | * | *
-  - Workflows for               |   | * | *
-  - AI Summarize                |   | * | *
-  - AI Autofill                 |   |   | *
-  - Multilingual help           |   |   | *
-  - Workload management         |   |   | *
-  - Custom tone of voice        |   |   | *
-  - Multiple help centers       |   |   | *
+[table]
+  head:
+    - Features *No sense on this list*
+    - Free *€0 forever*
+    - Basic *€30 / month*
+    - Pro *€90 / month*
 
-
+  items:
+    - Content first               | * | * | *
+    - Content collections         | * | * | *
+    - Hot-reloading               | * | * | *
+    - AI content generation       | * | * | *
+    - Cascading CSS modules       | * | * | *
+    - Public help center          | * | * | *
+    - Unlimited collections       |   | * | *
+    - Help customization          |   | * | *
+    - Multiple team members       |   | * | *
+    - Workflows                   |   |   | *
+    - Multilingual help           |   |   | *
+    - Workload management         |   |   | *
+    - Custom tone of voice        |   |   | *
+    - Multiple help centers       |   |   | *
 
 [.stack]
-  ## The complete web design platform
+  ## The content-first web design platform
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   ---
   [join-list]
