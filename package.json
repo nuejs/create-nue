@@ -1,7 +1,7 @@
 {
   "name": "create-nue",
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://github.com/nuejs/create-nue",
   "description": "Develop websites and single-page applications faster with the power of universal hot-reloading",
   "repository": {
