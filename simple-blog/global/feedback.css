@@ -41,7 +41,7 @@ dialog h3 {
 
 
 /* basic form styling  */
-.:focus-visible {
+::focus-visible {
   outline: 2px solid #dbf4ff;
   border-color: #00afff;
   outline-offset: 2px;

@@ -21,7 +21,7 @@ body > header {
   }
 
   /* logo */
-  > a img { width: 2em; }
+  > a img { width: 3.4em; }
 
   /* non-buttons */
   nav > a:not([role]) {

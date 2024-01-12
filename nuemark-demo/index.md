@@ -1,14 +1,15 @@
 
 ---
+# inline_css: true
 sections: [.hero]
 appdir: home
-# inline_css: true
 ---
 
 # Markdown with megapowers
 For content-first web teams.
 
 [button.epic "*Learn how it works*"]
+  href: https://nuejs.org/blog/introducing-nuemark/
 
 [tabs "First tab, Second tab, Third tab"]
   [! home/img/ui1.jpg]
@@ -47,7 +48,7 @@ For content-first web teams.
 
 
 
-## *Start for free* and upgrade to these random features. {#pricing}
+## *Start for free* and upgrade to these random features. { #pricing }
 
 [.pricing.cards]
   Free
@@ -103,23 +104,25 @@ For content-first web teams.
     - Pro *€90 / month*
 
   items:
-    - Content first               | * | * | *
-    - Content collections         | * | * | *
-    - Hot-reloading               | * | * | *
-    - AI content generation       | * | * | *
-    - Cascading CSS modules       | * | * | *
-    - Public help center          | * | * | *
-    - Unlimited collections       |   | * | *
-    - Help customization          |   | * | *
-    - Multiple team members       |   | * | *
-    - Workflows                   |   |   | *
-    - Multilingual help           |   |   | *
-    - Workload management         |   |   | *
-    - Custom tone of voice        |   |   | *
-    - Multiple help centers       |   |   | *
+    - Content first               | + | + | +
+    - Content collections         | + | + | +
+    - Hot-reloading               | + | + | +
+    - AI content generation       | + | + | +
+    - Cascading CSS modules       | + | + | +
+    - Public help center          | + | + | +
+    - Unlimited collections       |   | + | +
+    - Help customization          |   | + | +
+    - Multiple team members       |   | + | +
+    - Workflows                   |   | + | +
+    - Multilingual help           |   |   | +
+    - Workload management         |   |   | +
+    - Custom tone of voice        |   |   | +
+    - Multiple help centers       |   |   | +
 
 [.stack]
   ## The content-first web design platform
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   ---
   [join-list]
+
+

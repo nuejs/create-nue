@@ -1,16 +1,5 @@
 /* background  */
-body {
-  &:before {
-    content: "";
-    background: linear-gradient(180deg,#000000 0%,rgba(0,0,0,0) 100%);
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-
+html {
   background: radial-gradient(
     211% 113% at -66% 36%,
     #0b014a 39%,
@@ -20,6 +9,9 @@ body {
     rgb(110,255,211) 90%,
     rgb(236,241,56) 100%
   )
+}
+body {
+  background: linear-gradient(180deg,#000000 0%,rgba(0,0,0,0) 10%);
 }
 
 .hero {
