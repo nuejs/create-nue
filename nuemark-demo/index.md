@@ -11,7 +11,7 @@ For content-first web teams.
 [button.epic "*Learn how it works*"]
   href: https://nuejs.org/blog/introducing-nuemark/
 
-[tabs "First tab, Second tab, Third tab"]
+[tabs "First tab | Second tab | Third tab"]
   [! home/img/ui1.jpg]
   ---
   [! home/img/ui5.jpg]
