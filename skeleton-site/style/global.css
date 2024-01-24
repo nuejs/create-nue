@@ -18,3 +18,11 @@ body {
   margin: 5%;
   font-family: avenir next, arial;
 }
+
+.dark {
+  background: #ff8;
+}
+
+.selected {
+  font-weight: 800;
+}

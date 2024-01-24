@@ -1,12 +1,25 @@
 
+<head>
+
+  <!-- custom head extension. passed directly to client (with "client" attribute) -->
+  <script client>
+    console.info('hey')
+  </script>
+
+</head>
+
+<!-- global header -->
 <header>
-  <p>Header</p>
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
 </header>
 
+<!-- customized main area -->
 <main>
   <slot for="content"/>
 </main>
 
+<!-- customized main area -->
 <footer>
-  <p>Footer</p>
+  <small>&copy; Me { new Date().getFullYear() }</small>
 </footer>
