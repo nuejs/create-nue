@@ -9,7 +9,7 @@ body {
   /* single comments */
   em, li {color: #aa8 }
 
-  @media (orientation: landscape {
+  @media (orientation: landscape) {
     grid-auto-flow: column;
   }
 }
