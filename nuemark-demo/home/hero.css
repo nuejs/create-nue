@@ -84,19 +84,19 @@ body {
 
 
 /* tabs */
-.tabs {
+[tabs] {
   margin: 3.5rem auto 0;
   max-width: 1250px;
   font-size: 90%;
 
-  > nav {
+  [role=tablist] {
     margin-bottom: 1.2em;
 
     a { margin: 0 1em; }
 
     a:hover { color: white };
 
-    .selected {
+    [aria-selected] {
       font-weight: 600;
       color: white;
     }

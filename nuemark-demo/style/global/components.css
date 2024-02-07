@@ -38,11 +38,11 @@ table {
   border-collapse: collapse;
 }
 
-.tabs > ul {
-  list-style: none;
-  padding: 0;
-
-  > li { visibility: hidden; height: 0 }
-  .selected { visibility: visible; height: auto }
+[tabs] {
+  a { cursor: pointer }
+  > ul {
+    list-style: none;
+    padding: 0;
+  }
 }
 
