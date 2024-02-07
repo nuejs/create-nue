@@ -2,7 +2,7 @@
 ---
 title: CSS class naming strategies for scaleable dasboard design
 hero: img/dashboard-3.png
-pubDate: 2023-12-02
+pubDate: February 5, 2024 12:00 PM
 credits: ui8
 ---
 
