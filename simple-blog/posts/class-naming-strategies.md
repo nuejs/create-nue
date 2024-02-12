@@ -19,6 +19,19 @@ When designing for the web, keeping CSS in mind from the start prevents frustrat
 When designing for the web, keeping CSS in mind from the start prevents frustration down the road. For example, layered graphical elements must be broken down into achievable HTML components. Typography and color schemes are also heavily influenced by CSS possibilities.
 
 
+[code wrapper="shiny"]
+  function toggleAttr(el, name, flag) {
+    flag ? el.setAttribute(name, 1) :  el.removeAttribute(name)
+  }
+
+  function restoreTabs(flags) {
+    const panels = $$('[role=tabpanel]')
+
+    $$('[role=tab]').forEach((el, i) => {
+      toggleAttr(el, 'aria-selected', flags[i])
+      toggleAttr(panels[i], 'hidden', !flags[i])
+    })
+  }
 
 ## Exploit the power of selectors
 
@@ -28,6 +41,20 @@ On the development side, CSS itself involves visual design skills.Bringing a lay
 ![](img/dashboard-1.png)
 
 Overall, CSS is a uniquely visual language, with a direct impact on user-facing design. By embracing its connection to the design process, both designers and developers can build interfaces that are engaging and "CSS-native". The closer these roles work together, the better the end result. (edited)
+
+[code wrapper="shiny sky"]
+  .shiny {
+    background-image: linear-gradient(to bottom, #e879f9, #ec4899);
+    padding: 3em 0 0 3em;
+    border-radius: .8em;
+    overflow: hidden;
+    margin: 1.5em 0 2em;
+
+    [glow] {
+      padding: 2em;
+      margin: 0;
+    }
+  }
 
 
 ## Conclusion

@@ -1,7 +1,7 @@
 
 // Nue CSS preview (released later)
 
-*
+*, *::before, *::after
   box-sizing border-box
 
 :root

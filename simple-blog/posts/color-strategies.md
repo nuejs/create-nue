@@ -9,6 +9,40 @@ pubDate: 2022-06-13
 Working with color is one of the most fun parts of web design. But if you don't use them right in your CSS code, colors can also tank a site's usability and accessibility. In this post, we'll explore simple, real-world tips for effectively using color in your stylesheets.
 
 
+[codeblocks.shiny.codeblocks captions="Content *YAML* | Styling *CSS*"]
+  # View metadata
+  members:
+    title: Members
+    columns: [Source, Joined]
+    sorting:
+      created: Join date
+      cc: Location
+      email: Email
+
+  customers:
+    title: Customers
+    columns: [Plan, Subscribed]
+    sorting:
+      created: Date subscribed
+      card: Card type
+
+  ---
+  /* Tab styling */
+  [role=tablist] {
+    background: rgba(0, 0, 0, .7);
+    background-size: 3.5em;
+    padding: .7em 1.3em 0;
+    overflow: hidden;
+    display: flex;
+
+    a {
+      color: #fff9;
+      padding: .2em 1em .4em;
+      font-size: 90%;
+      cursor: pointer;
+    }
+  }
+
 ## How to create a foolproof color palette
 
 Choosing the right colors for a website can be tricky. Get one wrong and your entire design can feel off. Luckily, there are some simple strategies to create a foolproof web color palette:
@@ -27,6 +61,18 @@ Choosing the right colors for a website can be tricky. Get one wrong and your en
 > Focus on one dominant hue - Pick one main color and derive the rest of the palette from it. This creates cohesion.
 
 Following these simple tips will ensure you have a tightly edited, flexible, and foolproof palette ready for your next web project.
+
+
+```
+/* Tab styling */
+[role=tablist] {
+  background: rgba(0, 0, 0, .7);
+  background-size: 3.5em;
+  padding: .7em 1.3em 0;
+  overflow: hidden;
+  display: flex;
+}
+```
 
 
 ## The best CSS color formats for different needs
