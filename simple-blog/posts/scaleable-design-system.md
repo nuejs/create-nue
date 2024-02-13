@@ -54,7 +54,7 @@ Once a painting is underway, digital photography can also assist the process. Ta
   export default function Page() {
     async function onSubmit(event: FormEvent<Element>) {
   +   const response = await fetch('/api/submit', {
-  +     method: 'POSTO',
+  +     method: 'POST',
         body: formData,
       });
     }
