@@ -8,6 +8,7 @@
 article > [glow], [tabs] {
   border-radius: .6em;
   margin: 2em 0;
+  overflow: hidden;
 }
 
 /* tabbed code */
