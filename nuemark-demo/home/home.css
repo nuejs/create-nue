@@ -200,5 +200,16 @@ table {
 
   @media (max-width: 1000px) {
     flex-direction: column;
+
+    form {
+      width: calc(80vw - 3rem);
+      margin-inline: auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    form {
+      width: calc(100vw - 3rem);
+    }
   }
 }
