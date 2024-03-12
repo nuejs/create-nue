@@ -95,29 +95,29 @@ For content-first web teams.
 
   [button href="#" "Get started"]
 
+[.responsive-table]
+  [table]
+    head:
+      - Features *No sense on this list*
+      - Free *€0 forever*
+      - Basic *€30 / month*
+      - Pro *€90 / month*
 
-[table]
-  head:
-    - Features *No sense on this list*
-    - Free *€0 forever*
-    - Basic *€30 / month*
-    - Pro *€90 / month*
-
-  items:
-    - Content first               | + | + | +
-    - Content collections         | + | + | +
-    - Hot-reloading               | + | + | +
-    - AI content generation       | + | + | +
-    - Cascading CSS modules       | + | + | +
-    - Public help center          | + | + | +
-    - Unlimited collections       |   | + | +
-    - Help customization          |   | + | +
-    - Multiple team members       |   | + | +
-    - Workflows                   |   | + | +
-    - Multilingual help           |   |   | +
-    - Workload management         |   |   | +
-    - Custom tone of voice        |   |   | +
-    - Multiple help centers       |   |   | +
+    items:
+      - Content first               | + | + | +
+      - Content collections         | + | + | +
+      - Hot-reloading               | + | + | +
+      - AI content generation       | + | + | +
+      - Cascading CSS modules       | + | + | +
+      - Public help center          | + | + | +
+      - Unlimited collections       |   | + | +
+      - Help customization          |   | + | +
+      - Multiple team members       |   | + | +
+      - Workflows                   |   | + | +
+      - Multilingual help           |   |   | +
+      - Workload management         |   |   | +
+      - Custom tone of voice        |   |   | +
+      - Multiple help centers       |   |   | +
 
 [.stack]
   ## The content-first web design platform
