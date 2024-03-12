@@ -56,16 +56,15 @@ body {
 /* epic button */
 
 [role=button].epic {
-  border: .2em solid transparent;
+  border: .125em solid transparent;
   background: radial-gradient(75% 75% at 50% 100%, #c2d8f4 0%, #fff 100%) padding-box,
-    radial-gradient(var(--gpos, 70% 90% at -10% -10%), #c2d8f4 0%, rgba(0,0,0,.5) 100%) border-box;
+    radial-gradient(var(--gpos, 70% 90% at -10% -10%), #c2d8f4 0%, rgba(0,0,0,.2) 100%) border-box;
   letter-spacing: -.025em;
   font-size: calc(1em + .7vw);
-  box-shadow: 0 0 0 1px #fff5, 0 0 var(--press, .1em) black inset;
   transition: .2s;
 
   &:hover {
-    --gpos: 100% 30% at -30% 30%
+    --gpos: 90% 70% at -30% 30%
   }
 
   &:active {
