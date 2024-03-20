@@ -4,6 +4,10 @@
   --glow-padding: 1.5em;
 }
 
+[glow] {
+  background-color: var(--glow-bg-color);
+}
+
 /* rounding */
 article > [glow], [tabs] {
   border-radius: .6em;
