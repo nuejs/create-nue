@@ -1,0 +1,9 @@
+
+form {
+  max-width: 350px;
+  margin: 3em auto;
+
+  button {
+    width: 100%;
+  }
+}

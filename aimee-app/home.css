@@ -1,0 +1,16 @@
+
+
+.hero {
+  margin-bottom: 8vw;
+
+  [role=button] + p {
+    margin-top: 3em;
+    font-size: 90%;
+  }
+
+  > :last-child { flex: 1.5 }
+  @media (min-width: 900px) {
+    align-items: flex-end;
+  }
+}
+

@@ -1,0 +1,55 @@
+
+<main>
+  <h1>{ title }</h1>
+  <p>{ description }</p>
+  <img id="preview" src="/img/{ item }.webp" size="1100 × 430" alt="The { title } Sofa">
+
+  <section class="stack">
+    <div>
+      <slot for="content"/>
+    </div>
+    <div>
+      <product-details :item/>
+    </div>
+  </section>
+</main>
+
+
+<section @name="product-details" class="card">
+  <h2>{ name }</h2>
+
+  <h3>{ p.price } USD</h3>
+
+  <div is="color-selector" :style="--basecolor: #{p.color}">
+    <b :for="shade, i in shades" class="tint" selected="{ !i }" shade="{ shade }"></b>
+  </div>
+  
+  <ul>
+    <li :for="[ icon, desc] of Object.entries(details)"
+      :style="background-image: url(/img/{ icon }.svg)">
+      { desc }
+    </li>
+  </ul>
+
+  <a id="cta" role="button" href="/buy/{ item }" class="continue">Buy { name }</a>
+
+  <script>
+    shades = 'abcd'.split('')
+
+    details = {
+      stack: 'Victory Horsehide leather',
+      grid: '100% teak feet',
+      pin: 'Handcrafted in Kajaani',
+      badge: '25 year quarantee',
+      truck: '1-2 month delivery',
+    }
+
+    constructor(data) {
+      const { item } = data
+      this.name = item[0].toUpperCase() + item.slice(1)
+      this.p = data.products[item]
+    }
+  </script>
+</section>
+
+

@@ -1,0 +1,52 @@
+
+body {
+  background: url(/img/shot-4.webp);
+  background-position: -50vw;
+  background-size: cover;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: #9999;
+  padding-top: 6em;
+}
+
+.card {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+
+  > * {
+    width: 100%;
+    display: block;
+    margin: .5em 0;
+  }
+
+  input {
+    margin-top: 1.2em;
+  }
+
+  h1 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+
+  h1 + button {
+    background: #2B2F34 url(/img/github.svg) 15% 48% no-repeat;
+    background-size: 1em;
+    text-indent: 1em;
+  }
+
+  img {
+    width: 3em;
+  }
+
+  button {
+    padding: 1em;
+    font-size: 1.05em;
+  }
+
+
+}

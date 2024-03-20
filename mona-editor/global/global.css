@@ -1,0 +1,25 @@
+
+/* A shared CSS file. Hard linked from the @base folder */
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+  margin: 0;
+}
+
+a {
+  text-decoration: none
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+

@@ -1,0 +1,53 @@
+
+title_template: "%s • The Sofa Company"
+title: The gnarliest sofas in the world
+description: We have an unique collection of couches reserved for the brave.
+brand: The Sofa Company
+globals: [global]
+favicon: /img/sofa.svg
+logo: /img/logo.webp
+router: true
+css_2023: true
+
+main_navi:
+  - Unholy
+  - Demony
+  - Sinner
+
+products:
+  unholy:
+    price: 19,900
+    color: 7151C2
+
+  demony:
+    price: 16,250
+    color: 367B71
+
+  sinner:
+    price: 23,550
+    color: A9223C
+
+
+
+footer_navi:
+  Product:
+    - Vision
+    - Fabrics
+    - Support
+    - Refunding
+    - Taking care
+
+  Resellers:
+    - Berlin
+    - Edinburgh
+    - Kajaani
+    - Leipzig
+    - Reykjavik
+
+  Company:
+    - Brand
+    - About
+    - Contact
+    - Privacy Policy
+    - Terms of service
+

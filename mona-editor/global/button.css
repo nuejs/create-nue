@@ -1,0 +1,32 @@
+
+/* A shared CSS file. Hard linked from the @base folder */
+
+button, [role="button"] {
+  background-color: #333;
+  border-radius: .5em;
+  padding: .7em 1.4em;
+  display: inline-block;
+  text-align: center;
+  font-weight: 550;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+
+  /* states */
+  &:hover { background-color: #000 }
+  &:active { transform: scale(.98) }
+
+  &.secondary {
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #fff;
+    color: inherit;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #ddd;
+      background-color: #fff;
+    }
+  }
+
+  /* followed by another button */
+  + & { margin-left: .3em; }
+}

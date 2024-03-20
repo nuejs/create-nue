@@ -1,0 +1,37 @@
+
+main > img {
+  filter: hue-rotate(295deg);
+}
+
+h1 {
+  margin: 0 auto .5em;
+  font-weight: 300;
+  max-width: 7em;
+
+  em {
+    font-style: normal;
+    font-weight: bold
+  }
+
+  strong {
+    color: #c215ff
+  }
+
+  :last-child {
+    text-decoration: underline dotted #c215ff;
+    text-underline-offset: .15em;
+    font-weight: 450;
+  }
+}
+
+.continue {
+  background: #333 url(/img/arrow-right.svg) 88% 56% no-repeat;
+  background-size: 1.1em;
+  padding-right: 3.5em;
+  font-size: 120%;
+  strong {
+    font-weight: 300;
+  }
+
+}
+

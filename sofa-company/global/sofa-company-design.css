@@ -1,0 +1,109 @@
+
+@font-face {
+  font-family: oswald;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(/font/oswald.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: gabarito;
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(/font/gabarito.woff2) format('woff2');
+}
+
+h1 {
+  font-size: calc(2.5em + 5vw);
+  text-transform: uppercase;
+  letter-spacing: -.04em;
+  font-family: oswald, impact;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0;
+}
+
+nav a {
+  color: #111;
+  font-weight: 400;
+
+  &[active] {
+    font-weight: bold
+  }
+}
+
+
+h2 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+button, [role="button"] {
+  text-transform: uppercase;
+  font-family:oswald, impact;
+  padding: .7em 2em;
+  border-radius: 0;
+  font-weight: 800;
+}
+
+blockquote, h1 + p {
+  font-family: "times new roman";
+  font-size: calc(1.8em + 1.2vw);
+  letter-spacing: -0.04em;
+  color: black;
+  line-height: 1.15;
+}
+
+dialog img {
+  max-width: 100%;
+  margin: 1em 0 -.5em;
+}
+
+/* view transitions */
+::view-transition-old(root) {
+  transform: perspective(800px) rotateX(15deg);
+  transition: .3s;
+}
+
+figure { margin: 0 }
+
+
+/* main layout */
+main {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  padding: 3% 6vw;
+  font-family: gabarito;
+
+  /* centered master navigation */
+  > header {
+    justify-content: space-between;
+    margin-bottom: 3em;
+    font-size: 110%;
+    background-color: white;
+
+    > nav { flex: .35 }
+
+    aside { margin: 0; }
+    > a img { max-height: 2.5em }
+  }
+
+  /* footer with more surrounding whitespace */
+  > footer {
+    margin: 8em 0 4em;
+    font-size: 110%;
+  }
+}
+
+

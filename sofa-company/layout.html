@@ -1,0 +1,38 @@
+
+<header @name="site-nav">
+  <a href="/"><img :src="logo" width="209" height="44" alt="The Sofa Company logo"></a>
+  <nav>
+    <a :for="el in main_navi" href="/sofas/{ el.toLowerCase() }/">{ el }</a>
+  </nav>
+
+  <aside>
+    <nav><a href="/about/">About </a></nav>
+    <a href="/buy/" role="button">Buy</a>
+  </aside>
+
+  <a href="#menu" aria-label="Open the menu" class="burger"></a>
+</header>
+
+<main>
+  <slot for="content"/>
+</main>
+
+<footer>
+  <figure>
+    <img src="/img/logo-tall.webp" width="140" height="96"
+       alt="Taller Sofa Company logo">
+  </figure>
+
+  <aside>
+    <nav :for="[cat, entries] in Object.entries(footer_navi)">
+      <h3>{ cat }</h3>
+      <a :for="el in entries" href="#">{ el }</a>
+    </nav>
+  </aside>
+
+  <!-- mobile navigation -->
+  <dialog id="menu" class="card">
+    <a href="#">&times;</a>
+    <site-nav/>
+  </dialog>
+</footer>

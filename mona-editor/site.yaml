@@ -1,0 +1,31 @@
+
+title_template: "Mona • %s"
+title: Code editor for web designers and UX developers
+description: Mona is a coe editor with an unique blend of code and design. It is the best code editor for web designers and developers.
+brand: Mona
+globals: [global]
+favicon: /img/favicon.png
+router: false
+inline_css: true
+css_2023: true
+
+footer_navi:
+  Product:
+    - Download
+    - Roadmap
+    - FAQ
+
+  Developers:
+    - Docs
+    - Releases
+    - GitHub
+
+  Community:
+    - Blog
+    - Feedback
+    - Discussions
+
+  About:
+    - Vision
+    - Contributors
+    - Twitter

@@ -1,0 +1,52 @@
+
+/* A shared CSS file. Hard linked from the @base folder */
+
+nav a {
+  font-size: 90%;
+  font-weight: 500;
+  opacity: .6;
+  color: black;
+  &[active], &:hover { opacity: 1 }
+}
+
+/* global header */
+body > header {
+  &, > * {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+  }
+
+  aside { margin-left: auto }
+
+  @media (max-width: 800px) {
+    .burger { display: inline-block }
+    nav, aside { display: none; }
+  }
+}
+
+/* global footer */
+body > footer {
+  display: flex;
+  gap: 3em;
+
+  > :first-child { flex: .5 }
+
+  aside {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: grid;
+    gap: 2em;
+    flex: 1;
+  }
+
+  a {
+    display: block;
+    padding: .5em 0;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+

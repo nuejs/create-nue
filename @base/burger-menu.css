@@ -1,0 +1,47 @@
+
+/* A shared CSS file. Hard linked from the @base folder */
+
+.burger {
+  background-image: url(/img/menu.svg);
+  background-size: cover;
+  margin-left: auto;
+  height: 1.5em;
+  width: 1.5em;
+  display: none;
+}
+
+dialog {
+  box-shadow: 0 0 0 1000em #0009;
+  scroll-margin-top: 1em;
+  offset-distance: 1em;
+  left: inherit;
+  width: 250px;
+  right: 1em;
+  z-index: 1;
+  top: 1em;
+
+  /* toggle visibility */
+  display: none;
+  &:target { display: block }
+
+  /* close button */
+  > a {
+    position: absolute;
+    top: .15em;
+    right: .4em;
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 0;
+  }
+
+  img { max-width: 6em; }
+
+  nav a {
+    display: block;
+    width: 100%;
+    padding: .5em 0 1em;
+  }
+
+  nav { margin-top: 1em }
+}
+

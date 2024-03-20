@@ -1,0 +1,19 @@
+
+.stack {
+  margin: 3em 0 0;
+
+  @media(min-width: 900px) {
+    > :first-child {
+      position: sticky;
+      top: 1.5em;
+      height: 3em;
+      flex: .5
+    }
+  }
+}
+
+h2 + p {
+  font-size: 1em;
+  margin-top: 0;
+  color: #777;
+}

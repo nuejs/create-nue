@@ -46,10 +46,15 @@ await void(0)
 const template = await p.select({
   message: 'Pick a template',
   options: [
+    { value: 'aimee-app', label: 'Aimee website template', hint: 'https://aimee-app.nuejs.org'},
+    { value: 'sofa-company', label: 'Sofa Company website', hint: 'https://sofa-company.nuejs.org'},
+    { value: 'mona-editor', label: 'Mona Editor website', hint: 'https://mona-editor.nuejs.org'},
+
+    { value: 'nuemark-demo', label: 'Nuemark demo', hint: 'A rich, editable landing page'},
+
     { value: 'skeleton-site', label: 'Skeleton website', hint: '"Hello, World!" only'},
     { value: 'skeleton-app', label: 'Skeleton app', hint: '"Hello, World!" only'},
 
-    { value: 'nuemark-demo', label: 'Nuemark demo', hint: 'A heroic front page'},
     { value: 'hotreload-demo', label: 'Hot-reload demo', hint: 'From zero to fully-designed'},
 
     { value: 'simple-blog', label: 'Simple blog', hint: 'The blog from Nue tutorial' },

@@ -1,0 +1,48 @@
+
+h1 {
+  margin: 0 auto .5em;
+  max-width: 12em;
+}
+
+h2 {
+  margin: 0 0 .1em;
+  + p {
+    font-size: calc(1.1em + .9vw);
+    margin: 0 0 4em;
+  }
+}
+
+h3 + p {
+  margin: 0 0 1em;
+  max-width: 24em;
+}
+
+.hero {
+  box-shadow: 0em 0.1em 0.2em #5586ff, 0 0 5em #0037c2;
+  margin: 6rem 0 9rem;
+  border-radius: .6em;
+}
+
+.stack {
+  text-align: left;
+
+  > * {
+    background: linear-gradient(#fff1, transparent);
+    box-shadow: 0 1px 4px #fff1;
+    border-radius: 1em;
+    padding: 2.5em;
+  }
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: calc(2em + 7vw);
+  max-width: 1000px;
+  margin: 7em auto;
+  text-align: left;
+  display: grid;
+  img {
+    width: 3em;
+    margin-bottom: 1em;
+  }
+}

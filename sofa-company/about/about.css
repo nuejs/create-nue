@@ -1,0 +1,33 @@
+
+body >main {
+  max-width: 900px;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: .3em;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  text-align: left;
+  max-width: 900px;
+  display: grid;
+  gap: 3em;
+
+  img {
+    border-radius: 3px;
+    filter: grayscale(1);
+  }
+
+  /* TODO: remove this */
+  ul { display: none; }
+
+  p {
+    margin: 0;
+    color: #888;
+  }
+}

@@ -1,0 +1,26 @@
+
+main .card {
+  text-align: center;
+  margin-bottom: 6em;
+
+  h1 {
+    margin: .6em auto 0;
+    + p {
+      font-size: calc(5em + 2vw);
+      font-weight: 150;
+      margin: .1em 0;
+    }
+  }
+
+  [role=button] {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.columns {
+  gap: 5em;
+  h2 { margin: 3em 0 -.5em; }
+  h2:first-child { margin-top: 0; }
+  column-width: 320px;
+}

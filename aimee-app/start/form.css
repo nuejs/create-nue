@@ -1,0 +1,19 @@
+
+::placeholder {
+  color: #bbb;
+}
+
+input {
+  font-family: inherit;
+  border-radius: .4em;
+  font-size: inherit;
+  background: #f3f3f3;
+  padding: 1em;
+  width: 100%;
+  border:0;
+
+  &:focus {
+    background: white;
+  }
+
+}

@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: gabarito;
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(/font/gabarito.woff2) format('woff2');
+}
+
+body {
+  font-family: gabarito, system-ui;
+  background-color: #12141E;
+  padding: 3% 6vw;
+  color: white;
+
+  > header {
+    justify-content: space-between;
+    margin-bottom: 8em;
+  }
+}
+
+main {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-size: calc(2.5em + 2vw);
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: calc(2em + 1.5vw);
+}
+
+h3 {
+  margin: 0 0 .2em;
+  font-weight: 500;
+}
+
+button, [role=button] {
+  font-size: 1.2em;
+  background-color: #2A64F6;
+  &:hover { background-color: #1457ff }
+}
+
+p { color: #848d97 }
+
+nav a { color: #ccc }
+
+
+footer {
+  border-top: 1px solid #fff1;
+  margin-top: 10em;
+  padding: 5em 0;
+
+  h2 {
+    font-size: 1.7em;
+    margin: 0;
+  }
+}
+
+

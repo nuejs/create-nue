@@ -1,0 +1,25 @@
+
+<header>
+  <a href="/">
+    <img src="/img/logo.svg" width="87" height="28" alt="Mona logo">
+  </a>
+
+  <a href="https://github.com/nuejs/nue/">
+    <img src="/img/github.svg" width="32" height="32" alt="Github octocat logo">
+  </a>
+</header>
+
+<main>
+  <slot for="content"/>
+</main>
+
+<footer>
+  <h2>{ brand }</h2>
+
+  <aside>
+    <nav :for="[cat, entries] in Object.entries(footer_navi)">
+      <h3>{ cat }</h3>
+      <a :for="el in entries" href="#">{ el }</a>
+    </nav>
+  </aside>
+</footer>

@@ -1,0 +1,15 @@
+
+/* A shared/reusable CSS file. Hard linked from the @base folder */
+
+.stack {
+  margin-bottom: var(--gap, 3em);
+  gap: var(--gap, 3em);
+  display: flex;
+
+  > * {flex: 1 }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

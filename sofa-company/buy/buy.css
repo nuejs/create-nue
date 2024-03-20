@@ -1,0 +1,42 @@
+
+body {
+  background: url(/img/demony.jpg) 50% 50% no-repeat;
+  background-size: 310vh;
+  padding: 0;
+}
+
+form {
+  background: #fffe;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 3em 10%;
+
+  > img {
+    width: 12em;
+  }
+
+  h2 {
+    font-size: 5em;
+    margin: .3em 0;
+    letter-spacing: -.04em;
+    font-weight: 400;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+
+  .google {
+    background: #4397F7 url(/img/google.svg) 15% 52% no-repeat;
+    background-size: 2.2em;
+    text-indent: 1em;
+
+    &:hover {
+      background-color: #4573EE;
+    }
+  }
+
+}
