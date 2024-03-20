@@ -1,12 +1,9 @@
 
-/* the only thing to set */
 :root {
+
+  /* set this only. others are calculated */
   --main: hsl(210 90% 50%);
-}
 
-
-
-:root {
 
   /* main colors */
   --main-50: color-mix(in srgb, var(--main) 8%, white);
@@ -36,4 +33,7 @@
   --red: color-mix(in srgb, var(--main) 10%, #ff2f2f);
   --violet: color-mix(in srgb, var(--main) 20%, #d15fff);
   --yellow: color-mix(in srgb, var(--main) 5%, #ffff32);
+
 }
+
+
