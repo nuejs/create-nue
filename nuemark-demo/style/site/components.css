@@ -15,8 +15,10 @@ body > header {
     flex: .5;
   }
 
-  > :nth-child(2) {
-    text-align: center;
+  > :first-child {
+    flex: .3;
+  }
+  > :last-child {
     flex: 1;
   }
 
