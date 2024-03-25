@@ -4,7 +4,7 @@ inline_css: true
 ---
 
 [.hero.stack]
-  # Your friendly information managager
+  # Your friendly information manager
   Tackle everything with notes, tasks, and schedules all in one pleasant place.
 
   [button "Get started" href="/start/"]
