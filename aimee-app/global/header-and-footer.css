@@ -4,9 +4,12 @@
 nav a {
   font-size: 90%;
   font-weight: 500;
-  opacity: .6;
+  opacity: .5;
   color: black;
-  &[active], &:hover { opacity: 1 }
+  &[active], &:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
 }
 
 /* global header */

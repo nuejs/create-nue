@@ -28,6 +28,6 @@ h3 {
 
   p {
     margin: 0;
-    color: #888;
+    color: var(--gray-500);
   }
 }

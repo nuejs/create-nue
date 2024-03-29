@@ -1,6 +1,4 @@
 
-/* A shared CSS file. Hard linked from the @base folder */
-
 *, *::before, *::after {
   box-sizing: border-box
 }
@@ -12,14 +10,16 @@ body {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  text-underline-offset: 3px;
+  color: var(--link);
+
+  &:hover {
+    text-decoration: underline var(--gray-300);
+  }
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-

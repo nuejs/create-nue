@@ -6,7 +6,7 @@ body {
 }
 
 form {
-  background: #fffe;
+  background: rgba(255, 255, 255, .9);
   max-width: 600px;
   margin: 0 auto;
   height: 100vh;
@@ -35,7 +35,7 @@ form {
     text-indent: 1em;
 
     &:hover {
-      background-color: #4573EE;
+      background-color: #4573EE !important;
     }
   }
 

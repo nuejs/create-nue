@@ -1,0 +1,187 @@
+<html>
+
+  <head>
+    <slot for="head"/>
+  </head>
+
+  <div class="design-system">
+
+    <div class="card og-image" :style="background-image: url({ hero || og_image })"/>
+
+    <div class="card hero-area">
+      <h1>{ heading || title }</h1>
+      <p>{ subtitle || description }</p>
+    </div>
+
+    <div class="card">
+      <main-font :font="font"/>
+    </div>
+
+    <div class="card">
+      <demo-form/>
+    </div>
+
+    <div class="card">
+      <h2>Tables</h2>
+      <demo-table/>
+    </div>
+
+    <div class="card">
+      <h2>Main color</h2>
+      <color-palette :colors="primary"/>
+    </div>
+
+    <div class="card">
+      <h2>Grays</h2>
+      <color-palette :colors="grays"/>
+    </div>
+
+    <div class="card">
+      <h2>UI colors</h2>
+      <color-palette class="accent-colors" :colors="accents"/>
+    </div>
+
+    <div class="card">
+      <article>
+        <h2>Everyone is entitled in full equality</h2>
+        <p>
+          No one shall be subjected to <a href="#">arbitrary arrest</a>, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal.
+        </p>
+
+        <ul>
+          <li>Everyone has the right to freedom of thought</li>
+          <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
+        </ul>
+
+        <blockquote cite="https://elevatesociety.com/my-religion-is-very-simple/">
+          <p>My religion is very simple. My religion is kindness.</p>
+          <footer>— Dalai Lama</footer>
+        </blockquote>
+
+        <h3>No one shall be held in slavery</h3>
+
+        <p>
+          Everyone is entitled in full equality to a fair and <a href="#">public hearing</a> by an <em>independent</em> and impartial tribunal.
+        </p>
+
+        <ol>
+          <li>Everyone has the right to freedom of thought</li>
+          <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
+        </ol>
+      </article>
+    </div>
+
+
+    <div class="card">
+      <h2>Buttons</h2>
+      <div class="button-design">
+        <button>Submit</button>
+        <button class="secondary">Cancel</button>
+        <button class="continue">Continue</button>
+        <button disabled>Disabled</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    all = 'main-50 main-100 main-200 main-300 main-400 main-500 main-600 main-700 main-800 main-900 main-950'.split(' ')
+
+    primary = 'main-50 main-100 main-200 main-300 main-400 main-500 main-600 main-700 main-800 main-900 main-950'.split(' ')
+
+    grays = 'gray-50 gray-100 gray-200 gray-300 gray-400 gray-500 gray-600 gray-700 gray-800 gray-900 gray-950'.split(' ')
+
+    accents = 'warning success error link selected marker'.split(' ')
+  </script>
+
+
+</html>
+
+
+<div @name="main-font" class="main-font">
+  <h2>Aa</h2>
+  <div>
+    <p :for="w in font.weights" :style="font-weight: {w}">
+      { font.family } { names[w] } ({ w })
+    </p>
+  </div>
+
+  <script>
+    names = {
+      100: 'Thin',
+      200: 'Ultra Light',
+      300: 'Light',
+      400: 'Normal',
+      500: 'Medium',
+      600: 'Semi Bold',
+      700: 'Bold',
+      800: 'Ultra Bold',
+    }
+  </script>
+
+</div>
+
+
+<form @name="demo-form" onsubmit="return false">
+  <h2>Example form</h2>
+  <div>
+    <label for="name-input">Name</label>
+    <input name="name" id="name-input" placeholder="Example: Jane Doe">
+  </div>
+
+  <div>
+    <label for="name-input">Email</label>
+    <input name="email" id="email-input" placeholder="address@example.com">
+  </div>
+
+  <div>
+    <label for="feedback-input">Feedback</label>
+    <textarea name="feedback" id="feedback-input" placeholder="Type your thoughts here"/>
+  </div>
+
+  <button>Submit</button>
+</form>
+
+
+<table @name="demo-table">
+  <thead>
+    <tr>
+      <th>Date </th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr :for="el in items">
+      <td>{ el.date }</td>
+      <td>{ el.name }</td>
+      <td><a href="#">{ el.email }</a></td>
+      <td><span class="tag">{ el.status }</span></td>
+    </tr>
+  </tbody>
+
+  <script>
+    items = [
+      'Mar 26, 2024 | Aurora Knight     | aurora@erxample.com     | pending',
+      'Mar 26, 2024 | Phoenix Steele    | phoenix@erxample.com    | pending',
+      'Mar 25, 2024 | Luna Everhart     | luna@erxample.com       | confirmed',
+      'Mar 25, 2024 | Orion Frost       | orion@erxample.com      | confirmed',
+      'Mar 25, 2024 | Stephanie Blake   | stephanie@erxample.com  | confirmed',
+      'Mar 24, 2024 | Miriam Smith      | miriam@example.org      | confirmed',
+      'Mar 24, 2024 | Leslie Alexander  | leslie@example.org      | confirmed',
+      'Mar 20, 2024 | Michael Foster    | michael@example.org     | confirmed',
+    ].map(str => {
+      const [date, name, email, status] = str.split(/\s*\|\s*/)
+      return { date, name, email, status }
+    })
+  </script>
+
+</table>
+
+<section class="color-palette" @name="color-palette">
+  <div :for="name in colors">
+    <div class="tint" :style="background-color: var(--{ name })"/>
+    <p>--{ name }</p>
+  </div>
+</section>

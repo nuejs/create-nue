@@ -1,0 +1,18 @@
+
+table {
+  border-collapse: collapse;
+  color: var(--gray-400);
+  font-size: 90%;
+  width: 100%;
+
+  th, td {
+    padding: .6em 1em .6em 0;
+  }
+
+  th {
+    border-bottom: 1px solid var(--gray-300);
+    font-weight: 500;
+    text-align: left;
+    color: black;
+  }
+}

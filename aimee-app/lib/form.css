@@ -1,0 +1,39 @@
+
+form {
+  max-width: 24em;
+
+  > div {
+    margin-bottom: 1.5em;
+  }
+  label {
+    display: block;
+    margin-bottom: .5em;
+  }
+}
+
+input, textarea {
+  border: 1px solid var(--gray-400, #ccc);
+  font-family: inherit;
+  font-size: inherit;
+  padding: .7em 1em;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  form-sizing: normal;
+  min-height: 80px;
+}
+
+:root {
+  accent-color: var(--main-500)
+}
+
+::placeholder {
+  color: var(--gray-400)
+}
+
+:focus-visible {
+  outline: 2px solid var(--main-500);
+  outline-offset: 1px
+}

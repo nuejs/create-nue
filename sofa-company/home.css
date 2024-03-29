@@ -1,7 +1,4 @@
 
-main > img {
-  filter: hue-rotate(295deg);
-}
 
 h1 {
   margin: 0 auto .5em;
@@ -24,14 +21,8 @@ h1 {
   }
 }
 
-.continue {
-  background: #333 url(/img/arrow-right.svg) 88% 56% no-repeat;
-  background-size: 1.1em;
-  padding-right: 3.5em;
-  font-size: 120%;
-  strong {
-    font-weight: 300;
-  }
-
+picture {
+  filter: hue-rotate(295deg);
 }
+
 

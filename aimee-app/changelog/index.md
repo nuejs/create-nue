@@ -1,4 +1,8 @@
 
+---
+include: [article]
+---
+
 # Changelog
 Updates and improvements to Aimee
 

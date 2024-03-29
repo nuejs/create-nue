@@ -3,9 +3,16 @@
 .hero {
   margin-bottom: 8vw;
 
-  [role=button] + p {
-    margin-top: 3em;
-    font-size: 90%;
+  [role=button] {
+
+    /* followup button */
+    + a {
+      margin-left: .3em;
+    }
+    + p {
+      margin-top: 3em;
+      font-size: 90%;
+    }
   }
 
   > :last-child { flex: 1.5 }

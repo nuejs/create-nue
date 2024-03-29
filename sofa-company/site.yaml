@@ -4,10 +4,12 @@ title: The gnarliest sofas in the world
 description: We have an unique collection of couches reserved for the brave.
 brand: The Sofa Company
 globals: [global]
+libs: [lib]
 favicon: /img/sofa.svg
 logo: /img/logo.webp
 router: true
 css_2023: true
+og_image: /img/og.png
 
 main_navi:
   - Unholy

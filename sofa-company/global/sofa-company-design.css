@@ -1,4 +1,42 @@
 
+/* A shared CSS file. Hard linked from the @base folder */
+:root {
+  --main-50:  #fdf4ff;
+  --main-100: #fae8ff;
+  --main-200: #f5d0fe;
+  --main-300: #f0abfc;
+  --main-400: #e879f9;
+  --main-500: #d946ef;
+  --main-600: #c026d3;
+  --main-700: #a21caf;
+  --main-800: #86198f;
+  --main-900: #701a75;
+  --main-950: #4a044e;
+
+  --gray-50:  #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --gray-950: #020617;
+
+  --warning:  #fb923c;
+  --success:  #4ade80;
+  --error:    #ef4444;
+  --link:     #2563eb;
+  --selected: #2563eb;
+  --marker:   #facc15;
+
+  /* background colors */
+  --bg-alt-light: #cee;
+}
+
+
 @font-face {
   font-family: oswald;
   font-style: normal;
@@ -25,15 +63,14 @@ h1 {
   margin: 0;
 }
 
-nav a {
-  color: #111;
-  font-weight: 400;
-
-  &[active] {
-    font-weight: bold
-  }
+/* subtitle & blockquote */
+h1 + p, blockquote p {
+  font-family: "times new roman";
+  font-size: calc(1.8em + 1.2vw);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  text-wrap: balance;
 }
-
 
 h2 {
   font-weight: 500;
@@ -41,35 +78,38 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1em;
 }
 
+/* button overrides */
 button, [role="button"] {
   text-transform: uppercase;
-  font-family:oswald, impact;
+  font-family: oswald, impact;
   padding: .7em 2em;
   border-radius: 0;
   font-weight: 800;
+  font-size: 105%;
 }
 
-blockquote, h1 + p {
-  font-family: "times new roman";
-  font-size: calc(1.8em + 1.2vw);
-  letter-spacing: -0.04em;
-  color: black;
-  line-height: 1.15;
+.continue {
+  background: var(--gray-800) url(/img/arrow-right.svg) 88% 56% no-repeat;
+  background-size: 1.1em;
+  padding-right: 3.5em;
+  strong { font-weight: 300 }
 }
+
+.card {
+  border: 1px solid var(--gray-200);
+  background-color: white;
+  border-radius: 8px;
+  padding: 2em;
+}
+
 
 dialog img {
   max-width: 100%;
   margin: 1em 0 -.5em;
-}
-
-/* view transitions */
-::view-transition-old(root) {
-  transform: perspective(800px) rotateX(15deg);
-  transition: .3s;
 }
 
 figure { margin: 0 }
@@ -103,6 +143,23 @@ body {
   > footer {
     margin: 8em 0 4em;
     font-size: 110%;
+  }
+}
+
+
+/* view transitions */
+::view-transition-old(root) {
+  transform: perspective(800px) rotateX(15deg);
+  transition: .3s;
+}
+
+
+nav a {
+  color: var(--gray-600);
+  font-weight: 400;
+
+  &[active] {
+    font-weight: bold
   }
 }
 

@@ -1,0 +1,21 @@
+
+# title: Design
+include: [article, table, form]
+
+# design:
+
+hero: /img/og.png
+heading: Big heading
+subtitle: With optional description
+
+font:
+  family: System UI
+  weights: [800, 600, 500, 400]
+
+colors:
+  main: ALL
+  grays: ALL
+  accents: ALL
+
+
+

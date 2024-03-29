@@ -1,0 +1,117 @@
+
+/* design system layout */
+.design-system {
+  --gap: var(--list-gap, 2.4em);
+  column-width: 500px;
+  column-gap: var(--gap);
+
+  > * {
+    padding: var(--gap);
+    margin-bottom: var(--gap);
+    break-inside: avoid;
+
+
+    > form { margin: 0 auto; }
+  }
+  .card {
+    > :first-child { margin-top: 0 }
+    > :last-child { margin-bottom: 0 }
+  }
+}
+
+
+/* design overrides */
+body {
+  background: var(--gray-200);
+  .card { border: 0 }
+  article { max-width: 28em }
+}
+
+
+/* sections */
+.og-image {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 320px;
+}
+
+.main-font {
+  justify-content: space-evenly;
+  background-size: contain;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 27em;
+  display: flex;
+  gap: 2.4em;
+
+  h2 {
+    font-size: calc(6.5em + 3vw);
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+
+  p {
+    font-size: calc(1em + .2vw);
+    white-space: nowrap;
+    line-height: 1;
+    margin: .5em 0;
+
+
+    &:last-child {
+      margin-bottom: -.5em;
+    }
+  }
+}
+
+.hero-area {
+  text-align: center;
+  > * { margin: 0 }
+}
+
+.color-palette {
+  max-width: 35em;
+
+  div {
+    display: inline-block;
+    margin: 0 1em 1.5em 0;
+    width: 4.5em;
+  }
+
+  p {
+    color: var(--gray-500);
+    font-size: .8rem;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .tint {
+    border-radius: 4px;
+    margin-bottom: .4em;
+    margin-inline: auto;
+    display: block;
+    height: 3em;
+  }
+}
+
+.accent-colors {
+  justify-content: space-between;
+  max-width: 100%;
+  display: flex;
+  div { margin: 0 }
+
+  .tint {
+    border-radius: 10em;
+    width: 3.3em;
+    height: 3.3em;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.button-design {
+  text-wrap: balance;
+  button { margin: 0 1em 1em 0 }
+}

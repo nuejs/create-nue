@@ -1,13 +1,13 @@
 
 ::placeholder {
-  color: #bbb;
+  color: var(--gray-400);
 }
 
 input {
+  background: var(--gray-100);
   font-family: inherit;
   border-radius: .4em;
   font-size: inherit;
-  background: #f3f3f3;
   padding: 1em;
   width: 100%;
   border:0;
@@ -16,4 +16,8 @@ input {
     background: white;
   }
 
+}
+
+:focus-visible {
+  outline: 2px solid var(--main-500);
 }

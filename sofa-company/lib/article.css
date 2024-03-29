@@ -1,0 +1,58 @@
+
+/* technical / blog content */
+article {
+  font-size: 110%;
+
+  > p, li {
+    line-height: 1.5;
+    color: var(--gray-600)
+  }
+
+  a, strong {
+    font-weight: 500;
+    color: black;
+  }
+
+  a {
+    text-decoration: underline var(--link) 1px;
+    &:hover {
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--link);
+    }
+  }
+
+  blockquote {
+    margin: 0 0 1.5em;
+
+    p {
+      border-left: 3px solid black;
+      font-size: calc(1.2em + 1vw);
+      padding-left: .7em;
+      line-height: 1.25;
+    }
+    footer {
+      margin: -.7em 0 0 1em;
+      font-size: 95%;
+    }
+  }
+
+  h2:not(:first-child) {
+    margin-top: 3em
+  }
+
+  h3 {
+    margin: 3em 0 0
+  }
+
+  ol, ul {
+    padding-left: 1em;
+  }
+
+  li {
+    padding: .3em .6em;
+
+    &::marker {
+      color: var(--gray-400);
+    }
+  }
+}

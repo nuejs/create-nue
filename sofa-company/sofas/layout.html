@@ -5,9 +5,10 @@
   <img id="preview" src="/img/{ item }.webp" size="1100 × 430" alt="The { title } Sofa">
 
   <section class="stack">
-    <div>
+    <article>
       <slot for="content"/>
-    </div>
+    </article>
+
     <div>
       <product-details :item/>
     </div>
@@ -15,7 +16,7 @@
 </main>
 
 
-<section @name="product-details" class="card">
+<section @name="product-details" class="product-details card">
   <h2>{ name }</h2>
 
   <h3>{ p.price } USD</h3>

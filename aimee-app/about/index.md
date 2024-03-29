@@ -1,5 +1,5 @@
 
-# Aimee makes you more productive and humane
+# Aimee makes you more productive
 
 In the digital age, information overload is a common challenge faced by individuals on a daily basis. The need for a robust and efficient personal information manager (PIM) app has become increasingly important to help users organize, access, and manage their personal data with ease. We're building the next generation of this product category with focus on simplicity and user experience.
 

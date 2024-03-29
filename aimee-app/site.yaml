@@ -4,6 +4,7 @@ title: Personal information manager
 description: Aimee is your friendly information managager with notes, tasks, and schedules all in one pleasant place.
 brand: Aimee
 globals: [global]
+libs: [lib]
 favicon: /img/favicon.png
 logo: /img/logo.svg
 router: true
