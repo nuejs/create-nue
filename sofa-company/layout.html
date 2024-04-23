@@ -7,10 +7,10 @@
 
   <aside>
     <nav><a href="/about/">About </a></nav>
-    <a href="/buy/" role="button">Buy</a>
+    <a href="/buy/" data-display="button">Buy</a>
   </aside>
 
-  <a href="#menu" aria-label="Open the menu" class="burger"></a>
+  <a href="#menu" aria-labelledby="menutext" class="burger"><span id="menutext" hidden>Open the menu</span></a>
 </header>
 
 <main>
@@ -32,7 +32,7 @@
 
   <!-- mobile navigation -->
   <dialog id="menu" class="card">
-    <a href="#">&times;</a>
+    <a aria-labelledby="closemenu" href="#"><span id="closemenu" hidden>Close menu</span><span aria-hidden="true">&times;</span></a>
     <site-nav/>
   </dialog>
 </footer>
