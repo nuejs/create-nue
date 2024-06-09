@@ -11,9 +11,9 @@
 
 
 [.columns]
-  ## Is this going to be fee forever?
+  ## Is this going to be free forever?
 
-  Yes and no. We're from Sawo. We offer a free plan for users who want to try out our product before committing to a paid plan. Our free plan includes some crazilyg good stuff.
+  Yes and no. We're from Sawo. We offer a free plan for users who want to try out our product before committing to a paid plan. Our free plan includes some crazily good stuff.
 
   ## What are the limitations of the free plan?
 
