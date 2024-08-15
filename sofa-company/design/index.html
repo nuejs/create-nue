@@ -4,85 +4,89 @@
     <slot for="head"/>
   </head>
 
-  <div class="design-system">
+  <body :class="{ dark: dark }">
 
-    <div class="card og-image" :style="background-image: url({ hero || og_image })"/>
+    <div class="design-system">
 
-    <div class="card hero-area">
-      <h1>{ heading || title }</h1>
-      <p>{ subtitle || description }</p>
-    </div>
+      <div class="card og-image" :style="background-image: url({ hero || og_image })"/>
 
-    <div class="card">
-      <main-font :font="font"/>
-    </div>
-
-    <div class="card">
-      <demo-form/>
-    </div>
-
-    <div class="card">
-      <h2>Tables</h2>
-      <demo-table/>
-    </div>
-
-    <div class="card">
-      <h2>Main color</h2>
-      <color-palette :colors="primary"/>
-    </div>
-
-    <div class="card">
-      <h2>Grays</h2>
-      <color-palette :colors="grays"/>
-    </div>
-
-    <div class="card">
-      <h2>UI colors</h2>
-      <color-palette class="accent-colors" :colors="accents"/>
-    </div>
-
-    <div class="card">
-      <article>
-        <h2>Everyone is entitled in full equality</h2>
-        <p>
-          No one shall be subjected to <a href="#">arbitrary arrest</a>, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal.
-        </p>
-
-        <ul>
-          <li>Everyone has the right to freedom of thought</li>
-          <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
-        </ul>
-
-        <blockquote cite="https://elevatesociety.com/my-religion-is-very-simple/">
-          <p>My religion is very simple. My religion is kindness.</p>
-          <footer>— Dalai Lama</footer>
-        </blockquote>
-
-        <h3>No one shall be held in slavery</h3>
-
-        <p>
-          Everyone is entitled in full equality to a fair and <a href="#">public hearing</a> by an <em>independent</em> and impartial tribunal.
-        </p>
-
-        <ol>
-          <li>Everyone has the right to freedom of thought</li>
-          <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
-        </ol>
-      </article>
-    </div>
-
-
-    <div class="card">
-      <h2>Buttons</h2>
-      <div class="button-design">
-        <button>Submit</button>
-        <button class="secondary">Cancel</button>
-        <button class="continue">Continue</button>
-        <button disabled>Disabled</button>
+      <div class="card hero-area">
+        <h1>{ heading || title }</h1>
+        <p>{ subtitle || description }</p>
       </div>
+
+      <div class="card">
+        <main-font :font="font"/>
+      </div>
+
+      <div class="card">
+        <demo-form/>
+      </div>
+
+      <div class="card">
+        <h3>Tables</h3>
+        <demo-table/>
+      </div>
+
+      <div class="card">
+        <h3>Main color</h3>
+        <color-palette :colors="primary"/>
+      </div>
+
+      <div class="card">
+        <h3>Grays</h3>
+        <color-palette :colors="grays"/>
+      </div>
+
+      <div class="card">
+        <h3>UI colors</h3>
+        <color-palette class="accent-colors" :colors="accents"/>
+      </div>
+
+      <div class="card">
+        <article>
+          <h2>Everyone is entitled in full equality</h2>
+          <p>
+            No one shall be subjected to <a href="#">arbitrary arrest</a>, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal.
+          </p>
+
+          <ul>
+            <li>Everyone has the right to freedom of thought</li>
+            <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
+          </ul>
+
+          <blockquote cite="https://elevatesociety.com/my-religion-is-very-simple/">
+            <p>My religion is very simple. My religion is kindness.</p>
+            <footer>— Dalai Lama</footer>
+          </blockquote>
+
+          <h3>No one shall be held in slavery</h3>
+
+          <p>
+            Everyone is entitled in full equality to a fair and <a href="#">public hearing</a> by an <em>independent</em> and impartial tribunal.
+          </p>
+
+          <ol>
+            <li>Everyone has the right to freedom of thought</li>
+            <li>This right includes <strong>freedom to change</strong> his religion or belief</li>
+          </ol>
+        </article>
+      </div>
+
+
+      <div class="card">
+        <h3>Buttons</h3>
+        <div class="button-design">
+          <button>Submit</button>
+          <button class="secondary">Cancel</button>
+          <button class="continue">Continue</button>
+          <button disabled>Disabled</button>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+  </body>
 
   <script>
     all = 'main-50 main-100 main-200 main-300 main-400 main-500 main-600 main-700 main-800 main-900 main-950'.split(' ')
@@ -123,7 +127,7 @@
 
 
 <form @name="demo-form" onsubmit="return false">
-  <h2>Example form</h2>
+  <h3>Example form</h3>
   <div>
     <label for="name-input">Name</label>
     <input name="name" id="name-input" placeholder="Example: Jane Doe">

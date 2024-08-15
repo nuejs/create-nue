@@ -1,6 +1,4 @@
 
-/* A shared CSS file. Hard linked from the @base folder */
-
 *, *::before, *::after {
   box-sizing: border-box
 }
@@ -12,7 +10,13 @@ body {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  text-underline-offset: 3px;
+  color: var(--link);
+
+  &:hover {
+    text-decoration: underline var(--gray-300);
+  }
 }
 
 img {
@@ -20,6 +24,9 @@ img {
   height: auto;
 }
 
-
-
-
+.card {
+  background: linear-gradient(#fff1, transparent);
+  box-shadow: 0 1px 4px #fff1;
+  border-radius: 1em;
+  padding: 2.5em;
+}

@@ -13,7 +13,7 @@
 Mona is engineered solely for UX professionals
 
 
-[.stack]
+[.stack item="card"]
 
   ### Deep understanding of web assets
   I'm baby waistcoat twee before they sold out, fixie solarpunk ennui tumblr crucifix neutral seitan.
@@ -32,7 +32,7 @@ Mona is engineered solely for UX professionals
     alt: Color selector
 
 
-[.stack]
+[.stack item="card"]
 
   ### Record-breaking launch times
   I'm baby waistcoat twee before they sold out, fixie solarpunk ennui tumblr crucifix neutral seitan.

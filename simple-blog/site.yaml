@@ -1,26 +1,45 @@
 
 avatar: /img/avatar.jpg
 favicon: /img/favicon.jpg
+desc: UX development blog
 fullname: Emma Bennet
 slogan: Less is More
+port: 8083
 
 # OG image
 og: /img/og.jpg
 origin: https://nuejs.org
 
-social:
-  - icon: email
-    url: email:emma@bennet.co
-    alt: Emma Bennet email address
-  - icon: twitter
-    url: //twitter.com/tipiirai
-    alt: Twitter profile
-  - icon: github
-    url: //github.com/nuejs/
-    alt: Github projects
-  - icon: linkedin
-    url: //linkedin.com/in/tipiirai
-    alt: LinkedIn profile
+header:
+  myself:
+    - image: /img/avatar.jpg
+      size: 40 × 40
+      url: /
+
+    - label: Emma Bennet
+      url: /
+
+  social:
+    - image: /img/email.svg
+      url: email:emma@bennet.co
+      alt: Emma Bennet email address
+      size: 20 x 20
+
+    - image: /img/twitter.svg
+      url: //twitter.com/tipiirai
+      alt: Twitter profile
+      size: 20 x 20
+
+    - image: /img/github.svg
+      url: //github.com/nuejs/
+      alt: Github projects
+      size: 20 x 20
+
+    - image: /img/linkedin.svg
+      url: //linkedin.com/in/tipiirai
+      alt: LinkedIn profile
+      size: 20 x 20
+
 
 
 # nue config

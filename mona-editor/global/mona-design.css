@@ -1,4 +1,42 @@
 
+/* A shared CSS file. Hard linked from the @base folder */
+:root {
+  --main-50: #f0f9ff;
+  --main-100: #e0f2fe;
+  --main-200: #bae6fd;
+  --main-300: #7dd3fc;
+  --main-400: #38bdf8;
+  --main-500: #0ea5e9;
+  --main-600: #0284c7;
+  --main-700: #0369a1;
+  --main-800: #075985;
+  --main-900: #0c4a6e;
+  --main-950: #082f49;
+
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  --gray-950: #0a0a0a;
+
+  --warning:  #fb923c;
+  --success:  #4ade80;
+  --error:    #ef4444;
+  --link:     var(--main-500);
+  --selected: var(--main-500);
+  --marker:   #facc15;
+
+  /* background colors */
+  --body-bg: #12141E;
+  --bg-alt-light: var(--body-bg);
+}
+
 @font-face {
   font-family: gabarito;
   font-style: normal;
@@ -9,7 +47,7 @@
 
 body {
   font-family: gabarito, system-ui;
-  background-color: #12141E;
+  background-color: var(--body-bg);
   padding: 3% 6vw;
   color: white;
 

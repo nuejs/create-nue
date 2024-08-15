@@ -22,7 +22,7 @@
 
 /* design overrides */
 body {
-  background: var(--gray-200);
+  background: var(--bg-alt-light);
   .card { border: 0 }
   article { max-width: 28em }
 }

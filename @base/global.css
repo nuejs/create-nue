@@ -23,3 +23,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.card {
+  background: linear-gradient(#fff1, transparent);
+  box-shadow: 0 1px 4px #fff1;
+  border-radius: 1em;
+  padding: 2.5em;
+}
