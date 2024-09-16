@@ -25,4 +25,4 @@ social:
 
 # nue config
 globals: [global]
-page_router: true
+view_transitions: true
