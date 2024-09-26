@@ -1,7 +1,8 @@
 #!/usr/bin/env bun
 
 import { promises as fs } from 'node:fs'
-import { sep, join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 import * as p from '@clack/prompts'
 import color from 'picocolors';
@@ -9,7 +10,7 @@ import color from 'picocolors';
 async function copyTemplate(name, to) {
   const s = p.spinner()
   s.start('Copying template')
-  const root = new URL('.', import.meta.url).pathname
+  const root = dirname(fileURLToPath(import.meta.url))
   const src = join(root, name)
   // const filter = path =>  !path.includes(sep + '.')
   await fs.cp(src, to, { recursive: true, force: true })
